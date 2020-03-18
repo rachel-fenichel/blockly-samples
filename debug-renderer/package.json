@@ -1,0 +1,27 @@
+{
+  "name": "@blockly/plugin-debug-renderer",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "prepare": "webpack --display-error-details",
+    "clean": "rm $npm_package_directories_dist/main.js",
+    "start": "webpack-dev-server"
+  },
+  "directories": {
+    "dist": "dist"
+  },
+  "dependencies": {
+    "blockly": "^3.20200123.1"
+  },
+  "devDependencies": {
+    "source-map-loader": "^0.2.4",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "copy-webpack-plugin": "^5.1.1",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "babel-loader": "^8.0.6"
+  }
+}
