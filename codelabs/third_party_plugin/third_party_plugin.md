@@ -82,6 +82,8 @@ In your browser of choice, go to `http://localhost:3000/test`. You should see th
 
 ![A blockly workspace with sidebars for code generation and workspace options](./advanced_playground.md)
 
+Note: It may take a while for the playground to load when you first start it, because the test bundle needs to be built for the first time.
+
 TODO: Give an overview of what `start` does here.
 
 @rachel-fenichel: start worked fine to start up the server, but I don't get any changes based on code that I write either in src/index.js or test/index.js. Not even logs.
