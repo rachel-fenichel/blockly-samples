@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  <link rel="stylesheet" type="text/css" media="screen"
+    href="/assets/css/style.css?v=f58216e38f1ccfd986bfb0117289a06c4010204b">
+
+  <!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>@blockly/plugin-nominal-connection-checker | blockly-samples</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="@blockly/plugin-nominal-connection-checker" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Sample projects demonstrating how to integrate Blockly into your project" />
+<meta property="og:description" content="Sample projects demonstrating how to integrate Blockly into your project" />
+<link rel="canonical" href="http://localhost:4000/plugins/nominal-connection-checker/README.html" />
+<meta property="og:url" content="http://localhost:4000/plugins/nominal-connection-checker/README.html" />
+<meta property="og:site_name" content="blockly-samples" />
+<script type="application/ld+json">
+{"@type":"WebPage","headline":"@blockly/plugin-nominal-connection-checker","url":"http://localhost:4000/plugins/nominal-connection-checker/README.html","description":"Sample projects demonstrating how to integrate Blockly into your project","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <div id="header_wrap" class="outer">
+    <header class="inner">
+      
+      <a id="forkme_banner" href="https://github.com/rachel-fenichel/blockly-samples">View on GitHub</a>
+      
+
+      <h1 id="project_title">blockly-samples</h1>
+      <h2 id="project_tagline">Sample projects demonstrating how to integrate Blockly into your project</h2>
+
+      
+    </header>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      <h1 id="blocklyplugin-nominal-connection-checker-">@blockly/plugin-nominal-connection-checker <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that allows you to create more advanced connection checks.</p>
+
+<p>This project is targeted at helping Blockly model languages with complex nominal typing systems, like C++, Java, or Rust.
+It can also be used for modeling subsets of structurally typed languages like TypeScript, Golang, or Haskell. Or it
+can be used to create a type-safe blocks languages that generates a dynamically typed language like JavaScript.</p>
+
+<p>It includes support for modeling subtyping, generic functions/blocks, and parameterized types.</p>
+
+<h2 id="installation">Installation</h2>
+
+<h3 id="yarn">Yarn</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yarn add blockly-plugin-nominal
+</code></pre></div></div>
+
+<h3 id="npm">npm</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>npm install blockly-plugin-nominal --save
+</code></pre></div></div>
+
+<h2 id="usage">Usage</h2>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">Blockly</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">blockly</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span><span class="nx">pluginInfo</span> <span class="k">as</span> <span class="nx">NominalConnectionCheckerPluginInfo</span><span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@blockly/plugin-nominal-connection-checker</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="c1">// Inject Blockly.</span>
+<span class="kd">const</span> <span class="nx">workspace</span> <span class="o">=</span> <span class="nx">Blockly</span><span class="p">.</span><span class="nx">inject</span><span class="p">(</span><span class="dl">'</span><span class="s1">blocklyDiv</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">toolbox</span><span class="p">:</span> <span class="nx">toolboxCategories</span><span class="p">,</span>
+  <span class="na">plugins</span><span class="p">:</span> <span class="p">{</span>
+      <span class="p">...</span><span class="nx">NominalConnectionCheckerPluginInfo</span><span class="p">,</span>
+    <span class="p">},</span>
+<span class="p">});</span>
+
+<span class="c1">// Initialize plugin.</span>
+<span class="nx">workspace</span><span class="p">.</span><span class="nx">connectionChecker</span><span class="p">.</span><span class="nx">init</span><span class="p">(</span><span class="nx">hierarchyDef</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="api">API</h2>
+
+<!--
+  - TODO: describe the API.
+  -->
+
+<h2 id="license">License</h2>
+<p>Apache 2.0</p>
+
+    </section>
+  </div>
+
+  <!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+  <footer class="inner">
+    
+    <p class="copyright">blockly-samples maintained by <a
+        href="https://github.com/rachel-fenichel">rachel-fenichel</a></p>
+    
+    <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+  </footer>
+</div>
+
+
+  
+</body>
+
+</html>

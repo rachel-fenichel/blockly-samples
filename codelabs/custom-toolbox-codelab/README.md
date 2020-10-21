@@ -1,3 +1,5 @@
+---
+---
 Starter code and completed code for the [codelab](https://blocklycodelabs.dev/codelabs/custom_toolbox/index.html) on how to customize your toolbox.
 
 The completed code overrides various methods on the default category class to
