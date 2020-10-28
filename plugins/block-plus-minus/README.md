@@ -1,7 +1,8 @@
 ---
-    packageName: "@blockly/block-plus-minus"
-    description: "A group of blocks that replace the built-in mutator UI with a +/- based UI."
-    ---
+packageName: "@blockly/block-plus-minus"
+description: "A group of blocks that replace the built-in mutator UI with a +/- based UI."
+---
+
 # @blockly/block-plus-minus [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A group of [Blockly](https://www.npmjs.com/package/blockly) blocks that replace the built-in mutator UI with a +/-

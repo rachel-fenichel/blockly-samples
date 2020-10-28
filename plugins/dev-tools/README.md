@@ -1,7 +1,8 @@
 ---
-    packageName: "@blockly/dev-tools"
-    description: "A library of common utilities for Blockly extension development."
-    ---# @blockly/dev-tools [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+packageName: "@blockly/dev-tools"
+description: "A library of common utilities for Blockly extension development."
+---
+# @blockly/dev-tools [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A library of common utilities for Blockly extension development.
 - `toolboxSimple`: XML for an always-open flyout with no categories.

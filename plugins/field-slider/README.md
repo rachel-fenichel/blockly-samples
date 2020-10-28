@@ -1,7 +1,8 @@
 ---
-    packageName: "@blockly/field-slider"
-    description: "A Blockly slider field."
-    ---# @blockly/field-slider [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+packageName: "@blockly/field-slider"
+description: "A Blockly slider field."
+---
+# @blockly/field-slider [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) slider field.
 

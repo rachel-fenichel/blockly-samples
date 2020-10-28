@@ -1,7 +1,8 @@
 ---
-    packageName: "@blockly/field-grid-dropdown"
-    description: "A Blockly dropdown field with grid layout."
-    ---# @blockly/field-grid-dropdown [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+packageName: "@blockly/field-grid-dropdown"
+description: "A Blockly dropdown field with grid layout."
+---
+# @blockly/field-grid-dropdown [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) dropdown field with grid layout.
 

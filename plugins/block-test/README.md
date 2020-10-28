@@ -1,7 +1,8 @@
 ---
-    packageName: "@blockly/block-test"
-    description: "A group of Blockly test blocks."
-    ---# @blockly/block-test [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+packageName: "@blockly/block-test"
+description: "A group of Blockly test blocks."
+---
+# @blockly/block-test [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A set of [Blockly](https://www.npmjs.com/package/blockly) test blocks.
 

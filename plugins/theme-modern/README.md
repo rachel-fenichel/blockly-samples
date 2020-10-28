@@ -1,7 +1,8 @@
 ---
-    packageName: "@blockly/theme-modern"
-    description: "A Blockly modern theme with darker block borders."
-    ---# @blockly/theme-modern [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+packageName: "@blockly/theme-modern"
+description: "A Blockly modern theme with darker block borders."
+---
+# @blockly/theme-modern [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) modern theme that uses the
 same block colours as the [Classic theme](https://github.com/google/blockly/blob/master/core/theme/classic.js)
