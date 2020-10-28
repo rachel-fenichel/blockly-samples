@@ -1,8 +1,7 @@
 ---
-packageName: "@blockly/eslint-config"
-description: "ESlint configuration used by Blockly plugins."
----
-# @blockly/eslint-config [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+    packageName: "@blockly/eslint-config"
+    description: "ESlint configuration used by Blockly plugins."
+    ---# @blockly/eslint-config [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) used by [Blockly plugins](https://github.com/google/blockly-samples/tree/master/plugins)
 

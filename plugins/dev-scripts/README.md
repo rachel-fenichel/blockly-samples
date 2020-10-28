@@ -1,8 +1,7 @@
 ---
-packageName: "@blockly/dev-scripts"
-description: "Configuration and scripts for Blockly plugins."
----
-# @blockly/dev-scripts [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+    packageName: "@blockly/dev-scripts"
+    description: "Configuration and scripts for Blockly plugins."
+    ---# @blockly/dev-scripts [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 This package includes scripts and configuration files used by Blockly plugins.
 

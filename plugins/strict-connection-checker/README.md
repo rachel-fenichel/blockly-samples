@@ -1,8 +1,7 @@
 ---
-packageName: "@blockly/plugin-strict-connection-checker"
-description: "A Blockly plugin that makes connection checks strict."
----
-# @blockly/plugin-strict-connection-checker [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+    packageName: "@blockly/plugin-strict-connection-checker"
+    description: "A Blockly plugin that makes connection checks strict."
+    ---# @blockly/plugin-strict-connection-checker [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that imposes stricter rules for connection check arrays than the default checker in Blockly, but uses the same rules for dragging and safety.
 

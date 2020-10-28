@@ -1,8 +1,7 @@
 ---
-packageName: "@blockly/plugin-modal"
-description: "A Blockly plugin that creates a modal."
----
-# @blockly/plugin-modal [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+    packageName: "@blockly/plugin-modal"
+    description: "A Blockly plugin that creates a modal."
+    ---# @blockly/plugin-modal [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that renders a modal.
 

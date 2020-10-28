@@ -1,8 +1,7 @@
 ---
-packageName: "@blockly/create-package"
-description: "A tool for creating a Blockly plugin based on a template."
----
-# @blockly/create-package [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+    packageName: "@blockly/create-package"
+    description: "A tool for creating a Blockly plugin based on a template."
+    ---# @blockly/create-package [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A tool for creating a Blockly plugin based on a pre-existing template.
 

@@ -1,8 +1,7 @@
 ---
-packageName: "@blockly/plugin-typed-variable-modal"
-description: "A Blockly plugin to create a modal for creating typed variables."
----
-# @blockly/plugin-typed-variable-modal [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
+    packageName: "@blockly/plugin-typed-variable-modal"
+    description: "A Blockly plugin to create a modal for creating typed variables."
+    ---# @blockly/plugin-typed-variable-modal [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that adds the ability 
 to create a modal for creating typed variables.
