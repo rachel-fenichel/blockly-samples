@@ -7,15 +7,22 @@ layout: index
 ## Blocks
 * [Blocks Plus Minus](plugins/block-plus-minus/test/index.html)
 
+## Block Extensions
+* [Block Extension Tooltip](plugins/block-extension-tooltip/test/index.html)
+
 ## Fields
 * [Field Date](plugins/field-date/test/index.html)
 * [Field Slider](plugins/field-slider/test/index.html)
+* [Field Grid Dropdown](plugins/field-grid-dropdown/test/index.html)
+
 
 ## Plugins
 * [Modal](plugins/modal/test/index.html)
 * [Typed Variable Modal](plugins/typed-variable-modal/test/index.html)
 * [Workspace Search](plugins/workspace-search/test/index.html)
 * [Strict Connection Checker](plugins/strict-connection-checker/test/index.html)
+* [Continuous Toolbox](plugins/continuous-toolbox/test/index.html)
+* [Disable Top Blocks](plugins/disable-top-blocks/test/index.html)
 
 ## Themes
 * [Theme Modern](plugins/theme-modern/test/index.html)
