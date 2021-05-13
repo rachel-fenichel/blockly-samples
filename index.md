@@ -6,6 +6,7 @@ layout: index
 
 ## Blocks
 * [Blocks Plus Minus](plugins/block-plus-minus/test/index.html)
+* [Blocks Dynamic Connection](plugins/block-dynamic-connection/test/index.html)
 
 ## Block Extensions
 * [Block Extension Tooltip](plugins/block-extension-tooltip/test/index.html)
@@ -23,8 +24,12 @@ layout: index
 * [Strict Connection Checker](plugins/strict-connection-checker/test/index.html)
 * [Continuous Toolbox](plugins/continuous-toolbox/test/index.html)
 * [Disable Top Blocks](plugins/disable-top-blocks/test/index.html)
+* [Fixed Edges](plugins/fixed-edges/test/index.html)
+* [Zoom to Fit](plugins/zoom-to-fit/test/index.html)
+* [Keyboard Navigation](plugins/keyboard-navigation/test/index.html)
 
 ## Themes
+* [Theme Dark](plugins/theme-dark/test/index.html)
 * [Theme Modern](plugins/theme-modern/test/index.html)
 
 # Examples
@@ -44,6 +49,7 @@ layout: index
 ## Configuration
 * [Maximum Block Limit](examples/max-blocks-demo/index.html)
 * [RTL](examples/rtl-demo/index.html)
+* [Single-direction Scrolling](examples/single-direction-scroll-demo/index.html)
 
 ## Generator
 * [Generate JavaScript](examples/generator-demo/index.html)
