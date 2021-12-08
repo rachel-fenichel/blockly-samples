@@ -20,17 +20,23 @@ layout: index
 ## Plugins
 * [Modal](plugins/modal/test/index.html)
 * [Typed Variable Modal](plugins/typed-variable-modal/test/index.html)
+* [Backpack](plugins/workspace-backpack/test/index.html)
 * [Workspace Search](plugins/workspace-search/test/index.html)
+* [Workspace Content Highlight](plugins/content-highlight/test/index.html)
 * [Strict Connection Checker](plugins/strict-connection-checker/test/index.html)
 * [Continuous Toolbox](plugins/continuous-toolbox/test/index.html)
 * [Disable Top Blocks](plugins/disable-top-blocks/test/index.html)
 * [Fixed Edges](plugins/fixed-edges/test/index.html)
 * [Zoom to Fit](plugins/zoom-to-fit/test/index.html)
 * [Keyboard Navigation](plugins/keyboard-navigation/test/index.html)
+* [Scroll Options](plugins/scroll-options/test/index.html)
 
 ## Themes
 * [Theme Dark](plugins/theme-dark/test/index.html)
 * [Theme Modern](plugins/theme-modern/test/index.html)
+* [Theme High Contrast](plugins/theme-highcontrast/test/index.html)
+* [Theme Tritanopia](plugins/theme-tritanopia/test/index.html)
+* [Theme Deuteranopia](plugins/theme-deuteranopia/test/index.html)
 
 # Examples
 
@@ -67,6 +73,9 @@ layout: index
 ## Custom Fields
 * [Pitch Field](examples/pitch-field-demo/index.html)
 * [Turtle Field](examples/turtle-field-demo/index.html)
+
+## Backpack
+* [Shared Backpacks](examples/backpack-demo/index.html)
 
 ## Graph
 * [Graph](examples/graph-demo/index.html)
