@@ -2,6 +2,7 @@
 title: "@blockly/workspace-backpack Demo"
 packageName: "@blockly/workspace-backpack"
 description: "A Blockly plugin that adds Backpack support."
+version: "2.0.16"
 pageRoot: "plugins/workspace-backpack"
 pages:
   - label: "Playground"
@@ -57,6 +58,8 @@ backpack.init();
 This plugin takes an optional configuration object.
 ```
 {
+  allowEmptyBackpackOpen: (boolean|undefined),
+  useFilledBackpackImage: (boolean|undefined),
   contextMenu: {
     emptyBackpack: (boolean|undefined),
     removeFromBackpack: (boolean|undefined),
@@ -73,6 +76,8 @@ configuration object, you can currently configure which context menu options are
 registered at `init`.
 ```js
 const backpackOptions = {
+  allowEmptyBackpackOpen: true,
+  useFilledBackpackImage: true,
   contextMenu: {
     emptyBackpack: true,
     removeFromBackpack: true,
@@ -86,6 +91,8 @@ The following options are the default values used for any property in the
 passed in options that is undefined:
 ```js
 const defaultOptions = {
+  allowEmptyBackpackOpen: true,
+  useFilledBackpackImage: false,
   contextMenu: {
     emptyBackpack: true,
     removeFromBackpack: true,
@@ -96,6 +103,12 @@ const defaultOptions = {
   },
 };
 ```
+
+The `allowEmptyBackpackOpen` property, if set to `false`, will prevent the backpack flyout from
+being opened if the backpack is empty.
+
+The `useFilledBackpackImage` property, if set to `true`, will change the
+backpack image when the backpack has something in it.
 
 The `disablePreconditionChecks` property will prevent the "Copy to Backpack"
 context menu option from disabling the context menu option if the block is

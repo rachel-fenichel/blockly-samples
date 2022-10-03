@@ -2,6 +2,7 @@
 title: "@blockly/plugin-scroll-options Demo"
 packageName: "@blockly/plugin-scroll-options"
 description: "A Blockly plugin that adds advanced scroll options such as scroll-on-drag and scroll while holding a block."
+version: "2.0.23"
 pageRoot: "plugins/scroll-options"
 pages:
   - label: "Playground"
@@ -60,6 +61,9 @@ const workspace = Blockly.inject('blocklyDiv', {
       'blockDragger': ScrollBlockDragger,
       'metricsManager': ScrollMetricsManager,
     },
+  move: {
+    wheel: true, // Required for wheel scroll to work.
+  },
 });
 
 // Initialize plugin.

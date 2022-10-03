@@ -2,6 +2,7 @@
 title: "@blockly/keyboard-navigation Demo"
 packageName: "@blockly/keyboard-navigation"
 description: "A Blockly plugin that adds keyboard navigation support."
+version: "0.2.22"
 pageRoot: "plugins/keyboard-navigation"
 pages:
   - label: "Playground"
@@ -32,7 +33,7 @@ npm install @blockly/keyboard-navigation --save
 ## Usage
 ```js
 import * as Blockly from 'blockly';
-import {NavigationController} from 'blockly-plugin-keyboard-navigation';
+import {NavigationController} from '@blockly/keyboard-navigation';
 // Inject Blockly.
 const workspace = Blockly.inject('blocklyDiv', {
   toolbox: toolboxCategories,

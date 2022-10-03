@@ -2,6 +2,7 @@
 title: "@blockly/continuous-toolbox Demo"
 packageName: "@blockly/continuous-toolbox"
 description: "A Blockly plugin that adds a continous-scrolling style toolbox and flyout"
+version: "2.0.40"
 pageRoot: "plugins/continuous-toolbox"
 pages:
   - label: "Playground"

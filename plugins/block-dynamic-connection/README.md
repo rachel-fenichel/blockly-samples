@@ -2,6 +2,7 @@
 title: "@blockly/block-dynamic-connection Demo"
 packageName: "@blockly/block-dynamic-connection"
 description: "A group of blocks that add connections dynamically."
+version: "0.1.36"
 pageRoot: "plugins/block-dynamic-connection"
 pages:
   - label: "Playground"
@@ -28,11 +29,12 @@ import * as BlockDynamicConnection from '@blockly/block-dynamic-connection';
 ```
 
 ## API
-- ~~`overrideOldBlockDefinitions`: Replaces the Blockly default blocks with the
+- `overrideOldBlockDefinitions`: Replaces the Blockly default blocks with the
   dynamic connection blocks. This enables projects to use the dynamic block
-  plugin without changing existing XML.~~
-  Do not use this API unless you are already using it, because it does not
-  perform as intended. See #844 for context.
+  plugin without changing existing XML.
+  Note that if you enable this, you will **never** be able to switch back to
+  non-dynamic connections, because this changes the way mutations are
+  serialized.
 
 ## XML
 ```xml

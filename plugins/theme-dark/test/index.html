@@ -2,6 +2,7 @@
 title: "@blockly/theme-dark Demo"
 packageName: "@blockly/theme-dark"
 description: "A Blockly dark theme."
+version: "3.0.17"
 pageRoot: "plugins/theme-dark"
 pages:
   - label: "Playground"

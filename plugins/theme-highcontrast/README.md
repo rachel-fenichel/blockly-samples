@@ -2,6 +2,7 @@
 title: "@blockly/theme-highcontrast Demo"
 packageName: "@blockly/theme-highcontrast"
 description: "A Blockly high contrast theme."
+version: "2.0.17"
 pageRoot: "plugins/theme-highcontrast"
 pages:
   - label: "Playground"
