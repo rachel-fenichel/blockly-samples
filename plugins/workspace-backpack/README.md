@@ -2,7 +2,7 @@
 title: "@blockly/workspace-backpack Demo"
 packageName: "@blockly/workspace-backpack"
 description: "A Blockly plugin that adds Backpack support."
-version: "2.0.16"
+version: "3.0.2"
 pageRoot: "plugins/workspace-backpack"
 pages:
   - label: "Playground"

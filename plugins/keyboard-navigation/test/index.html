@@ -2,7 +2,7 @@
 title: "@blockly/keyboard-navigation Demo"
 packageName: "@blockly/keyboard-navigation"
 description: "A Blockly plugin that adds keyboard navigation support."
-version: "0.2.22"
+version: "0.3.2"
 pageRoot: "plugins/keyboard-navigation"
 pages:
   - label: "Playground"

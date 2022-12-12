@@ -30,6 +30,7 @@ layout: index
 * [Keyboard Navigation](plugins/keyboard-navigation/test/index.html)
 * [Scroll Options](plugins/scroll-options/test/index.html)
 * [Serialize Disabled Interactions](plugins/serialize-disabled-interactions/test/index.html)
+* [Shadow Block Converter](plugins/shadow-block-converter/test/index.html)
 * [Cross Tab Copy Paste](plugins/cross-tab-copy-paste/test/index.html)
 
 ## Themes
@@ -86,6 +87,3 @@ layout: index
 
 ## Mirrored Blockly
 * [Mirrored Blockly](examples/mirror-demo/index.html)
-
-## Plane
-* [Plane](examples/plane-demo/index.html)

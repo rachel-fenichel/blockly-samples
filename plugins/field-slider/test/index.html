@@ -2,7 +2,7 @@
 title: "@blockly/field-slider Demo"
 packageName: "@blockly/field-slider"
 description: "A Blockly slider field."
-version: "3.0.22"
+version: "4.0.2"
 pageRoot: "plugins/field-slider"
 pages:
   - label: "Playground"
