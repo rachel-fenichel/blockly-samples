@@ -1,16 +1,3 @@
----
-title: "@blockly/fixed-edges Demo"
-packageName: "@blockly/fixed-edges"
-description: "A Blockly MetricsManager for configuring fixed sides."
-version: "2.0.4"
-pageRoot: "plugins/fixed-edges"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/fixed-edges [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) MetricsManager that makes

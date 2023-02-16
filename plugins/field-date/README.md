@@ -1,16 +1,3 @@
----
-title: "@blockly/field-date Demo"
-packageName: "@blockly/field-date"
-description: "A Blockly date picker field that uses the Google Closure date picker."
-version: "6.0.4"
-pageRoot: "plugins/field-date"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/field-date [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) date picker field that uses the Google Closure date picker ([goog.ui.DatePicker](https://google.github.io/closure-library/source/closure/goog/demos/)).

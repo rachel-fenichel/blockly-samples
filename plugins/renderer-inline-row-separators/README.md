@@ -1,16 +1,3 @@
----
-title: "@blockly/renderer-inline-row-separators Demo"
-packageName: "@blockly/renderer-inline-row-separators"
-description: "A plugin to treat dummy inputs like line breaks."
-version: "0.2.1"
-pageRoot: "plugins/renderer-inline-row-separators"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/renderer-inline-row-separators [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin to create a renderer that treats dummy inputs like row separators, allowing block designers to arrange multiple inline value input connectors on separate rows by inserting dummy inputs between them. Example blocks demonstrating the feature are provided, as well as a function to add the feature to your own renderer.

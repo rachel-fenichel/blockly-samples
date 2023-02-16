@@ -1,16 +1,3 @@
----
-title: "@blockly/field-bitmap Demo"
-packageName: "@blockly/field-bitmap"
-description: "A field that lets users input a pixel grid with their mouse."
-version: "2.0.6"
-pageRoot: "plugins/field-bitmap"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/field-bitmap [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) field that allows for user-inputted pixel grids. The image value is stored as a 2D array of 1s and 0s, and supports any size. The user can paint over pixels with their mouse, or randomize the grid.

@@ -1,16 +1,3 @@
----
-title: "@blockly/theme-tritanopia Demo"
-packageName: "@blockly/theme-tritanopia"
-description: "A Blockly theme for people that have tritanopia."
-version: "3.0.3"
-pageRoot: "plugins/theme-tritanopia"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/theme-tritanopia [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) theme for people that have

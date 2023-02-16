@@ -1,16 +1,3 @@
----
-title: "@blockly/block-plus-minus Demo"
-packageName: "@blockly/block-plus-minus"
-description: "A group of blocks that replace the built-in mutator UI with a +/- based UI."
-version: "4.0.4"
-pageRoot: "plugins/block-plus-minus"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 
 # @blockly/block-plus-minus [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 

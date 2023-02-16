@@ -1,16 +1,3 @@
----
-title: "@blockly/dev-scripts Demo"
-packageName: "@blockly/dev-scripts"
-description: "Configuration and scripts for Blockly plugins."
-version: "1.2.28"
-pageRoot: "plugins/dev-scripts"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/dev-scripts [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 This package includes scripts and configuration files used by Blockly plugins.

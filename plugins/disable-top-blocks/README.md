@@ -1,16 +1,3 @@
----
-title: "@blockly/disable-top-blocks Demo"
-packageName: "@blockly/disable-top-blocks"
-description: "A Blockly plugin that shows the 'disable' context menu option only on non-orphan blocks."
-version: "0.2.4"
-pageRoot: "plugins/disable-top-blocks"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/disable-top-blocks [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that shows the

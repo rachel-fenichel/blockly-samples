@@ -1,16 +1,3 @@
----
-title: "@blockly/plugin-modal Demo"
-packageName: "@blockly/plugin-modal"
-description: "A Blockly plugin that creates a modal."
-version: "4.0.5"
-pageRoot: "plugins/modal"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/plugin-modal [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that renders a modal.

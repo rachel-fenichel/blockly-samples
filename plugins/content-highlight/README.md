@@ -1,16 +1,3 @@
----
-title: "@blockly/workspace-content-highlight Demo"
-packageName: "@blockly/workspace-content-highlight"
-description: "A Blockly workspace plugin that adds a highlight around the content area."
-version: "2.0.4"
-pageRoot: "plugins/content-highlight"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/workspace-content-highlight [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that highlights the

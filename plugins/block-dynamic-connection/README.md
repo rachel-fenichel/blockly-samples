@@ -1,16 +1,3 @@
----
-title: "@blockly/block-dynamic-connection Demo"
-packageName: "@blockly/block-dynamic-connection"
-description: "A group of blocks that add connections dynamically."
-version: "0.2.4"
-pageRoot: "plugins/block-dynamic-connection"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/block-dynamic-connection [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A group of [Blockly](https://www.npmjs.com/package/blockly) blocks that

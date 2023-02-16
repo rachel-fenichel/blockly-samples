@@ -1,16 +1,3 @@
----
-title: "@blockly/suggested-blocks Demo"
-packageName: "@blockly/suggested-blocks"
-description: "A plugin that adds toolbox panes with suggested blocks based on the user's past usage of blocks."
-version: "2.0.4"
-pageRoot: "plugins/suggested-blocks"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/suggested-blocks [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that suggests blocks for the user based on which blocks they've used already in the workspace.

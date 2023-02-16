@@ -1,16 +1,3 @@
----
-title: "@blockly/theme-modern Demo"
-packageName: "@blockly/theme-modern"
-description: "A Blockly modern theme with darker block borders."
-version: "3.0.2"
-pageRoot: "plugins/theme-modern"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/theme-modern [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) modern theme that uses the

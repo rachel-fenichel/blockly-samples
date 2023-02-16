@@ -1,16 +1,3 @@
----
-title: "@blockly/zoom-to-fit Demo"
-packageName: "@blockly/zoom-to-fit"
-description: "A Blockly plugin that adds a zoom-to-fit control to the workspace."
-version: "3.0.4"
-pageRoot: "plugins/zoom-to-fit"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/zoom-to-fit [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that adds a

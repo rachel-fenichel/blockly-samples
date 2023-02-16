@@ -1,16 +1,3 @@
----
-title: "@blockly/theme-highcontrast Demo"
-packageName: "@blockly/theme-highcontrast"
-description: "A Blockly high contrast theme."
-version: "3.0.2"
-pageRoot: "plugins/theme-highcontrast"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/theme-highcontrast [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly theme that uses darker colors

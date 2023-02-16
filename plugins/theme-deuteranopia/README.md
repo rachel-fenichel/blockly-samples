@@ -1,16 +1,3 @@
----
-title: "@blockly/theme-deuteranopia Demo"
-packageName: "@blockly/theme-deuteranopia"
-description: "A Blockly theme for people that have deuteranopia."
-version: "3.0.2"
-pageRoot: "plugins/theme-deuteranopia"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/theme-deuteranopia [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) theme for people that have

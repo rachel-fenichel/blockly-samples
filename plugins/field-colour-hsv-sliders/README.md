@@ -1,16 +1,3 @@
----
-title: "@blockly/field-colour-hsv-sliders Demo"
-packageName: "@blockly/field-colour-hsv-sliders"
-description: "A Blockly colour field using HSV sliders."
-version: "2.0.5"
-pageRoot: "plugins/field-colour-hsv-sliders"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/field-colour-hsv-sliders [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) colour field using HSV sliders for editing.

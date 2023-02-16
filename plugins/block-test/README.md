@@ -1,16 +1,3 @@
----
-title: "@blockly/block-test Demo"
-packageName: "@blockly/block-test"
-description: "A group of Blockly test blocks."
-version: "3.0.3"
-pageRoot: "plugins/block-test"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/block-test [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A set of [Blockly](https://www.npmjs.com/package/blockly) test blocks.

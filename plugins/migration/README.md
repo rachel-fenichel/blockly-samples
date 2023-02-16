@@ -1,16 +1,3 @@
----
-title: "@blockly/migrate Demo"
-packageName: "@blockly/migrate"
-description: "A collection of tools that help with migrating apps using Blockly to new versions of BLockly."
-version: "1.1.0"
-pageRoot: "plugins/migration"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/migrate [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A collection of tools that help with migrating apps built on [Blockly](https://www.npmjs.com/package/blockly) to new versions of Blockly.

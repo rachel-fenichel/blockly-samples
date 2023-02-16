@@ -1,16 +1,3 @@
----
-title: "@blockly/workspace-backpack Demo"
-packageName: "@blockly/workspace-backpack"
-description: "A Blockly plugin that adds Backpack support."
-version: "3.0.4"
-pageRoot: "plugins/workspace-backpack"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/workspace-backpack [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that adds a Backpack to the workspace.

@@ -1,16 +1,3 @@
----
-title: "@blockly/keyboard-navigation Demo"
-packageName: "@blockly/keyboard-navigation"
-description: "A Blockly plugin that adds keyboard navigation support."
-version: "0.3.4"
-pageRoot: "plugins/keyboard-navigation"
-pages:
-  - label: "Playground"
-    link: "test/index"
-  - label: "README"
-    link: "README"
-
----
 # @blockly/keyboard-navigation [![Built on Blockly](https://tinyurl.com/built-on-blockly)](https://github.com/google/blockly)
 
 A [Blockly](https://www.npmjs.com/package/blockly) plugin that adds keyboard
