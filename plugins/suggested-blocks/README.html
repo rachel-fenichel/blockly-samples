@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>@blockly/suggested-blocks Demo</title>
-  <style>
-    html, body {
-      margin: 0;
-    }
-  </style>
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  
+  <head>
+    <title>@blockly/suggested-blocks Demo</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
   <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/blockly-samples/css/custom.css" />
   <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" /></head>
-
-<body><nav id="toolbar">
+  <body><nav id="toolbar">
     <a href="/blockly-samples" id="arrow-back">
       <i class="material-icons">close</i>
       <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs"
@@ -41,9 +33,47 @@
     README
   </a>
 </li></ul>
-  <div id="root"></div>
-  <script src="../build/test_bundle.js"></script>
-<!-- FOOTER  -->
+  <h1 id="blocklysuggestedblocksbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/suggested-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that suggests blocks for the user based on which blocks they've used already in the workspace.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="yarn">Yarn</h3>
+<pre><code>yarn add @blockly/suggested-blocks
+</code></pre>
+<h3 id="npm">npm</h3>
+<pre><code>npm install @blockly/suggested-blocks --save
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre><code class="js language-js">import * as Blockly from 'blockly';
+import {toolboxCategories} from '@blockly/dev-tools';
+import * as SuggestedBlocks from '@blockly/suggested-blocks';
+
+function getNewCategories() {
+  const mostUsedCategory = '&lt;category name="Frequently Used" custom="MOST_USED"&gt;&lt;/category&gt;';
+  const recentlyUsedCategory = '&lt;category name="Recently Used" custom="RECENTLY_USED"&gt;&lt;/category&gt;';
+
+  // This type of insertion works in a pinch, but you would more so want to add
+  // the new categories wherever the rest of the categories are defined in the
+  // project (e.g. HTML, or a dedicated file for all the categories)
+  const indexToInsert = toolboxCategories.indexOf('&lt;/xml&gt;');
+  // Insert the new categories into the existing toolbox XML string
+  return toolboxCategories.slice(0, indexToInsert) + mostUsedCategory + recentlyUsedCategory + toolboxCategories.slice(indexToInsert);
+}
+
+// Inject Blockly.
+const workspace = Blockly.inject('blocklyDiv', {
+  toolbox: getNewCategories(),
+});
+
+// Initialize the plugin
+SuggestedBlocks.init(workspace);
+</code></pre>
+<h2 id="api">API</h2>
+<ul>
+<li><code>init</code>: Initializes the suggested blocks categories in the toolbox</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Apache 2.0</p>
+  <!-- FOOTER  -->
  <footer id="footer">
    <div class="footer-wrapper site-width">
      <div class="link-list">
@@ -72,5 +102,5 @@
    </div>
  </footer>
  </body>
-
-</html>
+ </html>
+  

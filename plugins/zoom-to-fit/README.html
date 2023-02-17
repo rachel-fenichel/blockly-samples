@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>@blockly/zoom-to-fit Demo</title>
-  <style>
-    html, body {
-      margin: 0;
-    }
-  </style>
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  
+  <head>
+    <title>@blockly/zoom-to-fit Demo</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
   <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/blockly-samples/css/custom.css" />
   <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" /></head>
-
-<body><nav id="toolbar">
+  <body><nav id="toolbar">
     <a href="/blockly-samples" id="arrow-back">
       <i class="material-icons">close</i>
       <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs"
@@ -41,9 +33,40 @@
     README
   </a>
 </li></ul>
-  <div id="root"></div>
-  <script src="../build/test_bundle.js"></script>
-<!-- FOOTER  -->
+  <h1 id="blocklyzoomtofitbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/zoom-to-fit <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that adds a
+zoom-to-fit control to the workspace.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="yarn">Yarn</h3>
+<pre><code>yarn add @blockly/zoom-to-fit
+</code></pre>
+<h3 id="npm">npm</h3>
+<pre><code>npm install @blockly/zoom-to-fit --save
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre><code class="js language-js">import * as Blockly from 'blockly';
+import {ZoomToFitControl} from '@blockly/zoom-to-fit';
+
+// Inject Blockly.
+const workspace = Blockly.inject('blocklyDiv', {
+  toolbox: toolboxCategories,
+});
+
+// Initialize plugin.
+const zoomToFit = new ZoomToFitControl(workspace);
+zoomToFit.init();
+</code></pre>
+<h2 id="api">API</h2>
+<ul>
+<li><code>init</code>: Initializes the zoom-to-fit control.</li>
+<li><code>dispose</code>: Disposes of the zoom-to-fit control.</li>
+<li><code>getBoundingRectangle</code>: Returns the bounding rectangle of the UI element in
+pixel units relative to the Blockly injection div.</li>
+<li><code>position</code>: Positions the zoom-to-fit control.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Apache 2.0</p>
+  <!-- FOOTER  -->
  <footer id="footer">
    <div class="footer-wrapper site-width">
      <div class="link-list">
@@ -72,5 +95,5 @@
    </div>
  </footer>
  </body>
-
-</html>
+ </html>
+  

@@ -1,22 +1,14 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <title>@blockly/plugin-strict-connection-checker Demo</title>
-  <style>
-    html, body {
-      margin: 0;
-    }
-  </style>
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  
+  <head>
+    <title>@blockly/plugin-strict-connection-checker Demo</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
   <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/blockly-samples/css/custom.css" />
   <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" /></head>
-
-<body><nav id="toolbar">
+  <body><nav id="toolbar">
     <a href="/blockly-samples" id="arrow-back">
       <i class="material-icons">close</i>
       <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs"
@@ -41,9 +33,35 @@
     README
   </a>
 </li></ul>
-  <div id="root"></div>
-  <script src="../build/test_bundle.js"></script>
-<!-- FOOTER  -->
+  <h1 id="blocklypluginstrictconnectioncheckerbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/plugin-strict-connection-checker <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that imposes stricter rules for connection check arrays than the default checker in Blockly, but uses the same rules for dragging and safety.</p>
+<p>This checker still expects nullable arrays of string for connection type checks, and still looks for intersections in the arrays. Unlike the default checker, null checks arrays are only compatible with other null arrays.</p>
+<h2 id="installation">Installation</h2>
+<h3 id="yarn">Yarn</h3>
+<pre><code>yarn add @blockly/plugin-strict-connection-checker
+</code></pre>
+<h3 id="npm">npm</h3>
+<pre><code>npm install @blockly/plugin-strict-connection-checker --save
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>The plugin exports a <code>pluginInfo</code> object for use in the options struct.</p>
+<pre><code class="js language-js">import * as Blockly from 'blockly';
+import {pluginInfo as StrictConnectionsPluginInfo} from '@blockly/plugin-strict-connection-checker';
+
+// Inject Blockly.
+const workspace = Blockly.inject('blocklyDiv', {
+  toolbox: toolboxCategories,
+  plugins: {
+      ...StrictConnectionsPluginInfo,
+    },
+});
+</code></pre>
+<p>Note that this uses the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator</a> (<code>...</code>) to copy the contents of <code>pluginInfo</code> into the <code>plugins</code> section of the struct.</p>
+<h2 id="api">API</h2>
+<p>This plugin exports a class, <code>StrictConnectionChecker</code>, and registers it as a connection checker with Blockly. You should not need to instantiate it directly.</p>
+<h2 id="license">License</h2>
+<p>Apache 2.0</p>
+  <!-- FOOTER  -->
  <footer id="footer">
    <div class="footer-wrapper site-width">
      <div class="link-list">
@@ -72,5 +90,5 @@
    </div>
  </footer>
  </body>
-
-</html>
+ </html>
+  

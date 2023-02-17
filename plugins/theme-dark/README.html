@@ -1,21 +1,14 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>@blockly/block-plus-minus Demo</title>
-    <style>
-      html, body {
-        margin: 0;
-      }
-    </style>
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  
+  <head>
+    <title>@blockly/theme-dark Demo</title>
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
   <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="/blockly-samples/css/custom.css" />
   <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" /></head>
-
-<body><nav id="toolbar">
+  <body><nav id="toolbar">
     <a href="/blockly-samples" id="arrow-back">
       <i class="material-icons">close</i>
       <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs"
@@ -23,27 +16,44 @@
     </a>
 
     <div class="title-grow">
-      <div class="title">@blockly/block-plus-minus Demo</div>
-      <div class="subtitle">A group of blocks that replace the built-in mutator UI with a +/- based UI.</div>
+      <div class="title">@blockly/theme-dark Demo</div>
+      <div class="subtitle">A Blockly dark theme.</div>
     </div>
-    4.0.5
+    4.0.2
     
-    <a href="https://github.com/google/blockly-samples/blob/master/plugins/block-plus-minus" class="button" target="_blank">View code</a>
-    <a href="https://www.npmjs.com/package/@blockly/block-plus-minus" class="button" target="_blank">View on npm</a>
+    <a href="https://github.com/google/blockly-samples/blob/master/plugins/theme-dark" class="button" target="_blank">View code</a>
+    <a href="https://www.npmjs.com/package/@blockly/theme-dark" class="button" target="_blank">View on npm</a>
   </nav><!-- PAGE TABS -->
   <ul id="tabs"><li>
-  <a href="/blockly-samples/plugins/block-plus-minus/test/index">
+  <a href="/blockly-samples/plugins/theme-dark/test/index">
     Playground
   </a>
 </li><li>
-  <a href="/blockly-samples/plugins/block-plus-minus/README">
+  <a href="/blockly-samples/plugins/theme-dark/README">
     README
   </a>
 </li></ul>
-    <div id="root"></div>
+  <h1 id="blocklythemedarkbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/theme-dark <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> dark theme.</p>
+<p><img src="https://github.com/google/blockly-samples/raw/master/plugins/theme-dark/readme-media/DarkTheme.png" alt="A Blockly workspace using the dark theme." /></p>
+<h2 id="installation">Installation</h2>
+<h3 id="yarn">Yarn</h3>
+<pre><code>yarn add @blockly/theme-dark
+</code></pre>
+<h3 id="npm">npm</h3>
+<pre><code>npm install @blockly/theme-dark --save
+</code></pre>
+<h2 id="usage">Usage</h2>
+<pre><code class="js language-js">import * as Blockly from 'blockly';
+import DarkTheme from '@blockly/theme-dark';
 
-    <script src="../build/test_bundle.js"></script>
-<!-- FOOTER  -->
+Blockly.inject('blocklyDiv', {
+  theme: DarkTheme,
+});
+</code></pre>
+<h2 id="license">License</h2>
+<p>Apache 2.0</p>
+  <!-- FOOTER  -->
  <footer id="footer">
    <div class="footer-wrapper site-width">
      <div class="link-list">
@@ -72,5 +82,5 @@
    </div>
  </footer>
  </body>
-
-</html>
+ </html>
+  
