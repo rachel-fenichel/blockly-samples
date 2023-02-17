@@ -33,15 +33,13 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklysuggestedblocksbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/suggested-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+  <h1 id="blocklysuggested-blocks-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/suggested-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that suggests blocks for the user based on which blocks they've used already in the workspace.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/suggested-blocks
-</code></pre>
+<pre><code>yarn add @blockly/suggested-blocks</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/suggested-blocks --save
-</code></pre>
+<pre><code>npm install @blockly/suggested-blocks --save</code></pre>
 <h2 id="usage">Usage</h2>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
 import {toolboxCategories} from '@blockly/dev-tools';
@@ -65,8 +63,7 @@ const workspace = Blockly.inject('blocklyDiv', {
 });
 
 // Initialize the plugin
-SuggestedBlocks.init(workspace);
-</code></pre>
+SuggestedBlocks.init(workspace);</code></pre>
 <h2 id="api">API</h2>
 <ul>
 <li><code>init</code>: Initializes the suggested blocks categories in the toolbox</li>

@@ -33,24 +33,22 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklyfieldbitmapbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/field-bitmap <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+  <h1 id="blocklyfield-bitmap-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/field-bitmap <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> field that allows for user-inputted pixel grids. The image value is stored as a 2D array of 1s and 0s, and supports any size. The user can paint over pixels with their mouse, or randomize the grid.</p>
 <p>Note: this field does not support serialization to XML.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/field-bitmap
-</code></pre>
+<pre><code>yarn add @blockly/field-bitmap</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/field-bitmap --save
-</code></pre>
+<pre><code>npm install @blockly/field-bitmap --save</code></pre>
 <h2 id="usage">Usage</h2>
 <p>This field accepts up to 3 parameters:</p>
 <ul>
-<li><code>"value"</code> to specify an initial value. Must be a 2D rectangular array of 1s and 0s.
+<li><code>"value"</code> to specify an initial value. Must be a 2D rectangular array of 1s and 0s.<br />
 If not provided, the default is an empty grid of the specified size.</li>
-<li><code>"width"</code> to specify an initial width, if there is no initial value.
+<li><code>"width"</code> to specify an initial width, if there is no initial value.<br />
 If not provided, the default is a width of 5.</li>
-<li><code>"height"</code> to specify an initial height, if there is no initial value.
+<li><code>"height"</code> to specify an initial height, if there is no initial value.<br />
 If not provided, the default is a height of 5.</li>
 </ul>
 <h3 id="javascript">JavaScript</h3>
@@ -62,8 +60,7 @@ Blockly.Blocks["test_field_bitmap"] = {
       .appendField("bitmap: ")
       .appendField(new FieldBitmap(...), "FIELDNAME");
   }
-};
-</code></pre>
+};</code></pre>
 <h3 id="json">JSON</h3>
 <p>Example with default value:</p>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
@@ -87,8 +84,7 @@ Blockly.defineBlocksWithJsonArray([
                 ],
             }
         ]
-    }]);
-</code></pre>
+    }]);</code></pre>
 <p>Example with width and height:</p>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
 import '@blockly/field-bitmap';
@@ -104,8 +100,7 @@ Blockly.defineBlocksWithJsonArray([
                 "height": 8
             }
         ]
-    }]);
-</code></pre>
+    }]);</code></pre>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
   <!-- FOOTER  -->

@@ -33,18 +33,16 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklydisabletopblocksbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/disable-top-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
-<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that shows the
-'disable' context menu option only on non-orphan blocks. This is useful in
-conjunction with the <code>Blockly.Events.disableOrphans</code> event handler (which you
+  <h1 id="blocklydisable-top-blocks-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/disable-top-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that shows the<br />
+'disable' context menu option only on non-orphan blocks. This is useful in<br />
+conjunction with the <code>Blockly.Events.disableOrphans</code> event handler (which you<br />
 must set up yourself).</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/disable-top-blocks
-</code></pre>
+<pre><code>yarn add @blockly/disable-top-blocks</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/disable-top-blocks --save
-</code></pre>
+<pre><code>npm install @blockly/disable-top-blocks --save</code></pre>
 <h2 id="usage">Usage</h2>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
 import {DisableTopBlocks} from '@blockly/disable-top-blocks';
@@ -58,14 +56,13 @@ workspace.addChangeListener(Blockly.Events.disableOrphans);
 
 // The plugin must be initialized before it has any effect.
 const disableTopBlocksPlugin = new DisableTopBlocks();
-disableTopBlocksPlugin.init();
-</code></pre>
+disableTopBlocksPlugin.init();</code></pre>
 <h2 id="api">API</h2>
 <ul>
-<li><code>init</code> initializes the plugin and modifies the behavior of the 'disable'
+<li><code>init</code> initializes the plugin and modifies the behavior of the 'disable'<br />
 context menu item.</li>
-<li><code>dispose</code> restores the original behavior of the context menu. This is never
-required to be called, but can be if you want to programmatically disable
+<li><code>dispose</code> restores the original behavior of the context menu. This is never<br />
+required to be called, but can be if you want to programmatically disable<br />
 the effects of the plugin.</li>
 </ul>
 <h2 id="license">License</h2>

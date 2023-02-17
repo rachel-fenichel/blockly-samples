@@ -33,16 +33,14 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklypluginstrictconnectioncheckerbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/plugin-strict-connection-checker <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+  <h1 id="blocklyplugin-strict-connection-checker-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/plugin-strict-connection-checker <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that imposes stricter rules for connection check arrays than the default checker in Blockly, but uses the same rules for dragging and safety.</p>
 <p>This checker still expects nullable arrays of string for connection type checks, and still looks for intersections in the arrays. Unlike the default checker, null checks arrays are only compatible with other null arrays.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/plugin-strict-connection-checker
-</code></pre>
+<pre><code>yarn add @blockly/plugin-strict-connection-checker</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/plugin-strict-connection-checker --save
-</code></pre>
+<pre><code>npm install @blockly/plugin-strict-connection-checker --save</code></pre>
 <h2 id="usage">Usage</h2>
 <p>The plugin exports a <code>pluginInfo</code> object for use in the options struct.</p>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
@@ -54,8 +52,7 @@ const workspace = Blockly.inject('blocklyDiv', {
   plugins: {
       ...StrictConnectionsPluginInfo,
     },
-});
-</code></pre>
+});</code></pre>
 <p>Note that this uses the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax">spread operator</a> (<code>...</code>) to copy the contents of <code>pluginInfo</code> into the <code>plugins</code> section of the struct.</p>
 <h2 id="api">API</h2>
 <p>This plugin exports a class, <code>StrictConnectionChecker</code>, and registers it as a connection checker with Blockly. You should not need to instantiate it directly.</p>

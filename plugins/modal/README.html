@@ -33,15 +33,13 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklypluginmodalbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/plugin-modal <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+  <h1 id="blocklyplugin-modal-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/plugin-modal <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that renders a modal.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/plugin-modal
-</code></pre>
+<pre><code>yarn add @blockly/plugin-modal</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/plugin-modal --save
-</code></pre>
+<pre><code>npm install @blockly/plugin-modal --save</code></pre>
 <h2 id="usage">Usage</h2>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
 import {Modal} from '@blockly/plugin-modal';
@@ -53,8 +51,7 @@ const workspace = Blockly.inject('blocklyDiv', {
 
 // Initialize plugin.
 const modal = new Modal(workspace);
-modal.init();
-</code></pre>
+modal.init();</code></pre>
 <h2 id="api">API</h2>
 <h3 id="methods">Methods</h3>
 <ul>
@@ -66,7 +63,7 @@ modal.init();
 </ul>
 <h3 id="properties">Properties</h3>
 <ul>
-<li><code>shouldCloseOnOverlayClick</code>: (default true) If set to true will close the
+<li><code>shouldCloseOnOverlayClick</code>: (default true) If set to true will close the<br />
 overlay when a user clicks outside of the modal.</li>
 <li><code>shouldCloseOnEsc</code>: (default true) If set to true will close the modal when the user hits escape.</li>
 </ul>

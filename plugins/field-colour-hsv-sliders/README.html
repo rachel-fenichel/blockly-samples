@@ -33,16 +33,14 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklyfieldcolourhsvslidersbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/field-colour-hsv-sliders <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+  <h1 id="blocklyfield-colour-hsv-sliders-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/field-colour-hsv-sliders <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> colour field using HSV sliders for editing.</p>
 <p><img src="readme-media/hsv_sliders_screenshot.png" alt="A Blockly workspace showing the HSV sliders." /></p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/field-colour-hsv-sliders
-</code></pre>
+<pre><code>yarn add @blockly/field-colour-hsv-sliders</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/field-colour-hsv-sliders --save
-</code></pre>
+<pre><code>npm install @blockly/field-colour-hsv-sliders --save</code></pre>
 <h2 id="usage">Usage</h2>
 <p>This plugin adds a field type <code>FieldColourHsvSliders</code> that is registered to the name <code>'field_colour_hsv_sliders'</code>. This field is an extension of the <code>Blockly.FieldColour</code> field and outputs values in the same hexadecimal string format <code>'#rrggbb'</code> even though the UI represents the colour in the HSV colour space. See the <a href="https://developers.google.com/blockly/guides/create-custom-blocks/fields/built-in-fields/colour#creation">Blockly.FieldColour documentation</a> on what parameters and configurations this field supports, although unlike <code>Blockly.FieldColour</code>, this field does not use colour swatches and thus ignores options related to the swatches such as <code>'colourOptions'</code>.</p>
 <p>The UI also provides an eye dropper button that can be used to take a colour from anywhere on the screen <a href="https://caniuse.com/?search=eyedropper">on supported platforms</a>. Chrome, Edge, and Opera support the eye dropper feature, except <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1348921">on Chromebooks</a> and on mobile devices. There is also <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=1227633">a known bug in Chrome on some versions of Linux</a> where the eye dropper may be visible but does not work correctly.</p>
@@ -68,8 +66,7 @@ Blockly.defineBlocksWithJsonArray([
 Blockly.JavaScript['colour_hsv_sliders'] = function(block) {
   const code = Blockly.JavaScript.quote_(block.getFieldValue('COLOUR'));
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
-};
-</code></pre>
+};</code></pre>
 <h3 id="javascript">JavaScript</h3>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
 import {FieldColourHsvSliders} from '@blockly/field-colour-hsv-sliders';
@@ -85,8 +82,7 @@ Blockly.Blocks['colour_hsv_sliders'] = {
 Blockly.JavaScript['colour_hsv_sliders'] = function(block) {
   const code = Blockly.JavaScript.quote_(block.getFieldValue('COLOUR'));
   return [code, Blockly.JavaScript.ORDER_ATOMIC];
-};
-</code></pre>
+};</code></pre>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
   <!-- FOOTER  -->

@@ -33,27 +33,25 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklyfieldgriddropdownbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/field-grid-dropdown <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+  <h1 id="blocklyfield-grid-dropdown-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/field-grid-dropdown <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> dropdown field with grid layout.</p>
 <p><img src="https://github.com/google/blockly-samples/raw/master/plugins/field-grid-dropdown/readme-media/dropdown.png" alt="" /></p>
 <p><img src="https://github.com/google/blockly-samples/raw/master/plugins/field-grid-dropdown/readme-media/dropdown-images.png" alt="" /></p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
-<pre><code>yarn add @blockly/field-grid-dropdown
-</code></pre>
+<pre><code>yarn add @blockly/field-grid-dropdown</code></pre>
 <h3 id="npm">npm</h3>
-<pre><code>npm install @blockly/field-grid-dropdown --save
-</code></pre>
+<pre><code>npm install @blockly/field-grid-dropdown --save</code></pre>
 <h2 id="usage">Usage</h2>
-<p>This field accepts the same parameters as the [Blockly.FieldDropdown](
-https://developers.google.com/blockly/guides/create-custom-blocks/fields/built-in-fields/dropdown#creation)
+<p>This field accepts the same parameters as the [Blockly.FieldDropdown](<br />
+<a href="https://developers.google.com/blockly/guides/create-custom-blocks/fields/built-in-fields/dropdown#creation">https://developers.google.com/blockly/guides/create-custom-blocks/fields/built-in-fields/dropdown#creation</a>)<br />
 in Blockly core. The config object bag passed into this field accepts additional optional parameters:</p>
 <ul>
-<li><code>"columns"</code> to specify the number of columns in the dropdown field (must be an integer greater than 0).
+<li><code>"columns"</code> to specify the number of columns in the dropdown field (must be an integer greater than 0).<br />
 If not provided, the default is 3 columns.</li>
-<li><code>"primaryColour"</code> to specify the colour of the dropdown (must be a string CSS colour). If not provided,
+<li><code>"primaryColour"</code> to specify the colour of the dropdown (must be a string CSS colour). If not provided,<br />
 the dropdown color will match the primary colour of the parent block.</li>
-<li><code>"borderColour"</code> to specify the colour of the border of the dropdown (must be a string CSS colour). If
+<li><code>"borderColour"</code> to specify the colour of the border of the dropdown (must be a string CSS colour). If<br />
 not provided, the border colour will match the tertiary colour of the parent block.</li>
 </ul>
 <h3 id="javascript">JavaScript</h3>
@@ -67,8 +65,7 @@ Blockly.Blocks["test_field_grid_dropdown"] = {
           ["A", "A"],["B", "B"], ["C", "C"],["D", "D"], ["E", "E"], ["F", "F"],
           ["G", "G"], ["H", "H"]]), "FIELDNAME");
   }
-};
-</code></pre>
+};</code></pre>
 <h3 id="json">JSON</h3>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
 import '@blockly/field-grid-dropdown';
@@ -86,8 +83,7 @@ Blockly.defineBlocksWithJsonArray([
                 ]
             }
         ]
-    }]);
-</code></pre>
+    }]);</code></pre>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
   <!-- FOOTER  -->

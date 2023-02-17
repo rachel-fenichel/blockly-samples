@@ -33,30 +33,27 @@
     README
   </a>
 </li></ul>
-  <h1 id="blocklyblockdynamicconnectionbuiltonblocklyhttpstinyurlcombuiltonblocklyhttpsgithubcomgoogleblockly">@blockly/block-dynamic-connection <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
-<p>A group of <a href="https://www.npmjs.com/package/blockly">Blockly</a> blocks that
+  <h1 id="blocklyblock-dynamic-connection-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/block-dynamic-connection <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A group of <a href="https://www.npmjs.com/package/blockly">Blockly</a> blocks that<br />
 add and remove connections dynamically.</p>
 <h2 id="installation">Installation</h2>
-<pre><code>npm install @blockly/block-dynamic-connection --save
-</code></pre>
+<pre><code>npm install @blockly/block-dynamic-connection --save</code></pre>
 <h2 id="usage">Usage</h2>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
-import * as BlockDynamicConnection from '@blockly/block-dynamic-connection';
-</code></pre>
+import * as BlockDynamicConnection from '@blockly/block-dynamic-connection';</code></pre>
 <h2 id="api">API</h2>
 <ul>
-<li><code>overrideOldBlockDefinitions</code>: Replaces the Blockly default blocks with the
-dynamic connection blocks. This enables projects to use the dynamic block
-plugin without changing existing XML.
-Note that if you enable this, you will <strong>never</strong> be able to switch back to
-non-dynamic connections, because this changes the way mutations are
+<li><code>overrideOldBlockDefinitions</code>: Replaces the Blockly default blocks with the<br />
+dynamic connection blocks. This enables projects to use the dynamic block<br />
+plugin without changing existing XML.<br />
+Note that if you enable this, you will <strong>never</strong> be able to switch back to<br />
+non-dynamic connections, because this changes the way mutations are<br />
 serialized.</li>
 </ul>
 <h2 id="xml">XML</h2>
 <pre><code class="xml language-xml">&lt;block type="dynamic_text_join"&gt;&lt;/block&gt;
 &lt;block type="dynamic_list_create"&gt;&lt;/block&gt;
-&lt;block type="dynamic_if"&gt;&lt;/block&gt;
-</code></pre>
+&lt;block type="dynamic_if"&gt;&lt;/block&gt;</code></pre>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
   <!-- FOOTER  -->
