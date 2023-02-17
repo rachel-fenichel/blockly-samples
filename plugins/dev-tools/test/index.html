@@ -19,7 +19,40 @@
   <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" />
   <!-- END INJECTED HEADER --></head>
 
-<body>
+<main id="main" class="has-tabs"><body>
+  <!-- NAV BAR -->
+  <nav id="toolbar">
+    <a href="/blockly-samples" id="arrow-back">
+      <i class="material-icons">close</i>
+      <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs"
+        alt="Blockly logo" />
+    </a>
+
+    <div class="title-grow">
+      <div class="title">@blockly/dev-tools Demo</div>
+      <div class="subtitle">A library of common utilities for Blockly extension development.</div>
+    </div>
+    5.0.5
+    
+    <a href="https://github.com/google/blockly-samples/blob/master/plugins/dev-tools" class="button" target="_blank">View code</a>
+    <a href="https://www.npmjs.com/package/@blockly/dev-tools" class="button" target="_blank">View on npm</a>
+  </nav>
+  <!-- END NAV BAR -->
+  
+  <!-- PAGE TABS -->
+  <ul id="tabs">
+    <li>
+      <a href="/blockly-samples/plugins/dev-tools/test/index">
+        Playground
+      </a>
+    </li>
+    <li>
+      <a href="/blockly-samples/plugins/dev-tools/README">
+        README
+      </a>
+    </li>
+  </ul>
+  <!-- END PAGE TABS -->
   <div id="root"></div>
   <script src="../build/test_bundle.js"></script>
 </main>
