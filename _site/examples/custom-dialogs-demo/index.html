@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Override Blockly browser dialogs with custom implementations." />
 <meta property="og:description" content="Override Blockly browser dialogs with custom implementations." />
+<link rel="canonical" href="http://localhost:4000/examples/custom-dialogs-demo/" />
+<meta property="og:url" content="http://localhost:4000/examples/custom-dialogs-demo/" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"Custom Dialogs","description":"Override Blockly browser dialogs with custom implementations.","url":"/examples/custom-dialogs-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Override Blockly browser dialogs with custom implementations.","headline":"Custom Dialogs","url":"http://localhost:4000/examples/custom-dialogs-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -139,7 +141,7 @@
       };
 
       var demoWorkspace = Blockly.inject("blocklyDiv", {
-        media: "https://unpkg.com/blockly/media/",
+        media: "./node_modules/blockly/media/",
         toolbox: toolbox,
       });
     </script>

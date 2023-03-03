@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Sample projects demonstrating how to integrate Blockly into your project" />
 <meta property="og:description" content="Sample projects demonstrating how to integrate Blockly into your project" />
+<link rel="canonical" href="http://localhost:4000/examples/interpreter-demo/step-execution.html" />
+<meta property="og:url" content="http://localhost:4000/examples/interpreter-demo/step-execution.html" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"JS Interpreter","description":"Sample projects demonstrating how to integrate Blockly into your project","url":"/examples/interpreter-demo/step-execution.html","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Sample projects demonstrating how to integrate Blockly into your project","headline":"JS Interpreter","url":"http://localhost:4000/examples/interpreter-demo/step-execution.html","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -144,17 +146,13 @@
             "y": 20,
             "inline": true,
             "fields": {
-              "VAR": {
-                "id": "n"
-              }
+              "VAR": {"id": "n"}
             },
             "inputs": {
               "VALUE": {
                 "block": {
                   "type": "math_number",
-                  "fields": {
-                    "NUM": 1
-                  }
+                  "fields": {"NUM": 1}
                 }
               }
             },
@@ -166,9 +164,7 @@
                   "TIMES": {
                     "block": {
                       "type": "math_number",
-                      "fields": {
-                        "NUM": 4
-                      }
+                      "fields": {"NUM": 4}
                     }
                   },
                   "DO": {
@@ -176,34 +172,26 @@
                       "type": "variables_set",
                       "inline": true,
                       "fields": {
-                        "VAR": {
-                          "id": "n"
-                        }
+                        "VAR": {"id": "n"}
                       },
                       "inputs": {
                         "VALUE": {
                           "block": {
                             "type": "math_arithmetic",
-                            "fields": {
-                              "OP": "MULTIPLY"
-                            },
+                            "fields": {"OP": "MULTIPLY"},
                             "inputs": {
                               "A": {
                                 "block": {
                                   "type": "variables_get",
                                   "fields": {
-                                    "VAR": {
-                                      "id": "n"
-                                    }
+                                    "VAR": {"id": "n"}
                                   }
                                 }
                               },
                               "B": {
                                 "block": {
                                   "type": "math_number",
-                                  "fields": {
-                                    "NUM": 2
-                                  }
+                                  "fields": {"NUM": 2}
                                 }
                               }
                             }
@@ -218,9 +206,7 @@
                               "block": {
                                 "type": "variables_get",
                                 "fields": {
-                                  "VAR": {
-                                    "id": "n"
-                                  }
+                                  "VAR": {"id": "n"}
                                 }
                               }
                             }
@@ -244,7 +230,7 @@
     };
 
     const demoWorkspace = Blockly.inject('blocklyDiv',
-        {media: 'https://unpkg.com/blockly/media/',
+        {media: './node_modules/blockly/media/',
          toolbox: toolboxJson});
     Blockly.JavaScript.STATEMENT_PREFIX = 'highlightBlock(%1);\n';
     Blockly.JavaScript.addReservedWords('highlightBlock');

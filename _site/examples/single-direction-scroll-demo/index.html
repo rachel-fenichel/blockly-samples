@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Use Blockly with single-direction scrolling." />
 <meta property="og:description" content="Use Blockly with single-direction scrolling." />
+<link rel="canonical" href="http://localhost:4000/examples/single-direction-scroll-demo/" />
+<meta property="og:url" content="http://localhost:4000/examples/single-direction-scroll-demo/" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"Single-direction Scrolling","description":"Use Blockly with single-direction scrolling.","url":"/examples/single-direction-scroll-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Use Blockly with single-direction scrolling.","headline":"Single-direction Scrolling","url":"http://localhost:4000/examples/single-direction-scroll-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -105,7 +107,7 @@
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
         {
-          media: 'https://unpkg.com/blockly/media/',
+          media: './node_modules/blockly/media/',
           toolbox: document.getElementById('toolbox'),
           grid:
               {

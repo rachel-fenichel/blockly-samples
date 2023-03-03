@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Two Blockly instances connected as leader-follower." />
 <meta property="og:description" content="Two Blockly instances connected as leader-follower." />
+<link rel="canonical" href="http://localhost:4000/examples/mirror-demo/" />
+<meta property="og:url" content="http://localhost:4000/examples/mirror-demo/" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"Mirrored Blockly","description":"Two Blockly instances connected as leader-follower.","url":"/examples/mirror-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Two Blockly instances connected as leader-follower.","headline":"Mirrored Blockly","url":"http://localhost:4000/examples/mirror-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -157,14 +159,14 @@
         },
       ]
     };
-  
-    // Inject primary workspace. 
+
+    // Inject primary workspace.
     var primaryWorkspace = Blockly.inject('primaryDiv',
-        {media: 'https://unpkg.com/blockly/media/',
+        {media: './node_modules/blockly/media/',
          toolbox: toolbox});
     // Inject secondary workspace.
     var secondaryWorkspace = Blockly.inject('secondaryDiv',
-        {media: 'https://unpkg.com/blockly/media/',
+        {media: './node_modules/blockly/media/',
          readOnly: true});
     // Listen to events on primary workspace.
     primaryWorkspace.addChangeListener(mirrorEvent);

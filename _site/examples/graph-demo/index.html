@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Instant updates when blocks are changed." />
 <meta property="og:description" content="Instant updates when blocks are changed." />
+<link rel="canonical" href="http://localhost:4000/examples/graph-demo/" />
+<meta property="og:url" content="http://localhost:4000/examples/graph-demo/" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"Graph","description":"Instant updates when blocks are changed.","url":"/examples/graph-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Instant updates when blocks are changed.","headline":"Graph","url":"http://localhost:4000/examples/graph-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -147,7 +149,7 @@ if (typeof google == 'object') {
         'Are you connected to the Internet?');
 }
 
-// Define the toolbox 
+// Define the toolbox
 const toolbox = {
   "kind": "categoryToolbox",
   "contents": [
@@ -184,7 +186,7 @@ const toolbox = {
               }
             }
           }
-        }, 
+        },
         {
           "kind": "block",
           "type": "math_single",
@@ -396,7 +398,7 @@ const startBlocks = {
       "type": "graph_set_y",
       "x": 100,
       "y": 100,
-      "inputs": { 
+      "inputs": {
         "VALUE": {
           "block": {
             "type": "math_arithmetic",
@@ -430,7 +432,7 @@ const startBlocks = {
                 }
               }
             }
-          }        
+          }
         }
       }
     }]
@@ -581,7 +583,7 @@ Graph.init = function() {
   Graph.workspace = Blockly.inject('blocklyDiv',
       {collapse: false,
        disable: false,
-       media: 'https://unpkg.com/blockly/media/',
+       media: './node_modules/blockly/media/',
        toolbox: toolbox});
 
   Blockly.serialization.workspaces.load(startBlocks, Graph.workspace);

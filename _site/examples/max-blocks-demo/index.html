@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Limit the total number of blocks allowed (for academic exercises)." />
 <meta property="og:description" content="Limit the total number of blocks allowed (for academic exercises)." />
+<link rel="canonical" href="http://localhost:4000/examples/max-blocks-demo/" />
+<meta property="og:url" content="http://localhost:4000/examples/max-blocks-demo/" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"Maximum Block Limit","description":"Limit the total number of blocks allowed (for academic exercises).","url":"/examples/max-blocks-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"Limit the total number of blocks allowed (for academic exercises).","headline":"Maximum Block Limit","url":"http://localhost:4000/examples/max-blocks-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -139,7 +141,7 @@
 
   <script>
     var demoWorkspace = Blockly.inject('blocklyDiv',
-        {media: 'https://unpkg.com/blockly/media/',
+        {media: './node_modules/blockly/media/',
          maxBlocks: 5,
          toolbox: document.getElementById('toolbox')});
 

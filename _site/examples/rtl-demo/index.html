@@ -17,9 +17,11 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="See what Blockly looks like in right-to-left mode (for Arabic and Hebrew)." />
 <meta property="og:description" content="See what Blockly looks like in right-to-left mode (for Arabic and Hebrew)." />
+<link rel="canonical" href="http://localhost:4000/examples/rtl-demo/" />
+<meta property="og:url" content="http://localhost:4000/examples/rtl-demo/" />
 <meta property="og:site_name" content="blockly-samples" />
 <script type="application/ld+json">
-{"headline":"RTL","description":"See what Blockly looks like in right-to-left mode (for Arabic and Hebrew).","url":"/examples/rtl-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
+{"description":"See what Blockly looks like in right-to-left mode (for Arabic and Hebrew).","headline":"RTL","url":"http://localhost:4000/examples/rtl-demo/","@type":"WebPage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -83,7 +85,7 @@
   <script>
     function init() {
       var demoWorkspace = Blockly.inject('blocklyDiv',
-          {media: 'https://unpkg.com/blockly/media/',
+          {media: './node_modules/blockly/media/',
            rtl: true,
            toolbox: document.getElementById('toolbox')});
       Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
