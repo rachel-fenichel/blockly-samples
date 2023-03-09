@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- INJECTED HEADER -->
-  <meta name="viewport" content="width=device-width,maximum-scale=2">
-  <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/css/custom.css"/>
-  <!-- END INJECTED HEADER -->
   <meta charset="utf-8">
-  <title>Blockly Backpack</title>
+  <title>blockly-backpack-demo Demo</title>
   <script src="./node_modules/blockly/blockly_compressed.js"></script>
   <script src="./node_modules/blockly/blocks_compressed.js"></script>
   <script src="./node_modules/blockly/msg/en.js"></script>
@@ -26,9 +19,16 @@
       font-size: 140%;
     }
   </style>
-</head>
-<body onload="init()" class="root">
-      <main id="main" class="has-tabs">
+
+  <!-- INJECTED HEADER -->
+  <meta name="viewport" content="width=device-width,maximum-scale=2">
+  <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="/blockly-samples/css/custom.css" />
+  <link rel="stylesheet" href="https://blocklycodelabs.dev/styles/main.css" />
+  <!-- END INJECTED HEADER --></head>
+<main id="main" class="has-tabs"><body onload="init()">
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples" id="arrow-back">
@@ -38,14 +38,30 @@
     </a>
 
     <div class="title-grow">
-      <div class="title">Blockly Backpack</div>
-      
+      <div class="title">blockly-backpack-demo Demo</div>
+      <div class="subtitle">undefined</div>
     </div>
+    0.0.0
     
-    <a href="https://github.com/google/blockly-samples/blob/master/examples/backpack-demo" class="button" target="_blank">View code</a>
+    <a href="https://github.com/google/blockly-samples/blob/master/plugins/backpack-demo" class="button" target="_blank">View code</a>
+    <a href="https://www.npmjs.com/package/blockly-backpack-demo" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
   
+  <!-- PAGE TABS -->
+  <ul id="tabs">
+    <li>
+      <a href="/blockly-samples/plugins/backpack-demo/test/index">
+        Playground
+      </a>
+    </li>
+    <li>
+      <a href="/blockly-samples/plugins/backpack-demo/README">
+        README
+      </a>
+    </li>
+  </ul>
+  <!-- END PAGE TABS -->
   <p>This is a demo of two Blockly instances with a custom Backpack "sharing" Backpack contents.</p>
 
   <table width="100%">
@@ -132,7 +148,6 @@
     <category name="Functions" categorystyle="procedure_category" custom="PROCEDURE"></category>
   </xml>
 </main>
-  
   <!-- FOOTER  -->
   <footer id="footer">
     <div class="footer-wrapper site-width">
