@@ -2,10 +2,10 @@
   <head>
   <!-- INJECTED HEADER -->
   <meta name="viewport" content="width=device-width,maximum-scale=2">
-  <link rel="icon" type="image/x-icon" href="/blockly-samples/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="/blockly-samples/css/custom.css"/>
+  <link rel="stylesheet" href="/css/custom.css"/>
   <!-- END INJECTED HEADER -->
     <title>@blockly/suggested-blocks Demo</title>
   </head>
@@ -13,7 +13,7 @@
     <main id="main" class="has-tabs">
   <!-- NAV BAR -->
   <nav id="toolbar">
-    <a href="/blockly-samples" id="arrow-back">
+    <a href="/" id="arrow-back">
       <i class="material-icons">close</i>
       <img src="https://blocklycodelabs.dev/images/logo_knockout.png" class="logo-devs"
         alt="Blockly logo" />
@@ -23,7 +23,7 @@
       <div class="title">@blockly/suggested-blocks Demo</div>
       <div class="subtitle">A plugin that adds toolbox panes with suggested blocks based on the user's past usage of blocks.</div>
     </div>
-    2.0.10
+    2.0.13
     
     <a href="https://github.com/google/blockly-samples/blob/master/plugins/suggested-blocks" class="button" target="_blank">View code</a>
     <a href="https://www.npmjs.com/package/@blockly/suggested-blocks" class="button" target="_blank">View on npm</a>
@@ -33,12 +33,12 @@
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
-      <a href="/blockly-samples/plugins/suggested-blocks/test/index">
+      <a href="/plugins/suggested-blocks/test/index">
         Playground
       </a>
     </li>
     <li>
-      <a href="/blockly-samples/plugins/suggested-blocks/README">
+      <a href="/plugins/suggested-blocks/README">
         README
       </a>
     </li>
@@ -81,7 +81,19 @@ const workspace = Blockly.inject('blocklyDiv', {
 SuggestedBlocks.init(workspace);</code></pre>
 <h2 id="api">API</h2>
 <ul>
-<li><code>init</code>: Initializes the suggested blocks categories in the toolbox</li>
+<li><code>init</code>: Initializes the suggested blocks categories in the toolbox. Takes several arguments:<ul>
+<li><code>workspace</code>: The workspace to use the plugin with. If you have multiple<br />
+workspaces, you need to register the plugin for each workspace separately,<br />
+and the stats will be tracked separately.</li>
+<li><code>numBlocksPerCategory</code> (optional): The maximum number of blocks to show in<br />
+each category. Defaults to 10.</li>
+<li><code>waitForFinishedLoading</code> (optional): Whether to wait for the<br />
+<a href="https://developers.google.com/blockly/reference/js/blockly.events_namespace.finishedloading_class.md"><code>Blockly.Events.FinishedLoading</code> event</a><br />
+before taking action on any new <code>BlockCreate</code> events. If you disable event<br />
+firing while you load the initial state of the workspace, you'll need to set<br />
+this to <code>false</code>, or the plugin will never place blocks in either category.<br />
+By default, this value is <code>true</code>, so that events fired while loading initial<br />
+serialized state do not affect the statistics.</li></ul></li>
 </ul>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
