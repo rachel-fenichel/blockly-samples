@@ -10,7 +10,7 @@
     <title>@blockly/dev-tools Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/dev-tools" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,11 +46,10 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklydev-tools-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/dev-tools <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+      <h1 id="blocklydev-tools-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/dev-tools <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A library of helpful tools for Blockly development.</p>
 <h2 id="installation">Installation</h2>
 <pre><code>npm install @blockly/dev-tools -D --save</code></pre>
@@ -106,20 +108,20 @@ const toolbox = generateFieldTestBlocks('field_template', [
   },
 ]);</code></pre>
 <h3 id="test-helpers">Test Helpers</h3>
-<p>This package is also used in mocha tests, and exports a suite of useful test helpers.<br />
+<p>This package is also used in mocha tests, and exports a suite of useful test helpers.
 You can find the full list of helpers <a href="https://github.com/google/blockly-samples/blob/master/plugins/dev-tools/src/test_helpers.mocha.js">here</a>.</p>
 <h3 id="debug-renderer">Debug Renderer</h3>
-<p>The debug renderer is a helpful tool to debug blocks when building a custom<br />
-renderer. It displays the different elements on a block such as the rows,<br />
+<p>The debug renderer is a helpful tool to debug blocks when building a custom
+renderer. It displays the different elements on a block such as the rows,
 elements and connections shown below.</p>
-<p><img src="https://github.com/google/blockly-samples/raw/master/plugins/dev-tools/readme-media/DebuggerRows.png" alt="A block showing the rows." /><br />
-<img src="https://github.com/google/blockly-samples/raw/master/plugins/dev-tools/readme-media/DebuggerElements.png" alt="A block showing the elements." /><br />
+<p><img src="https://github.com/google/blockly-samples/raw/master/plugins/dev-tools/readme-media/DebuggerRows.png" alt="A block showing the rows." />
+<img src="https://github.com/google/blockly-samples/raw/master/plugins/dev-tools/readme-media/DebuggerElements.png" alt="A block showing the elements." />
 <img src="https://github.com/google/blockly-samples/raw/master/plugins/dev-tools/readme-media/DebuggerConnections.png" alt="A block showing the connections." /></p>
-<p>If you want to use the debug a custom renderer with the playground, you can<br />
-simply set your renderer in the <code>defaultOptions</code> passed into <code>createPlayground</code>.<br />
-The debug renderer can then be turned on/off by toggling the 'debugEnabled'<br />
+<p>If you want to use the debug a custom renderer with the playground, you can
+simply set your renderer in the <code>defaultOptions</code> passed into <code>createPlayground</code>.
+The debug renderer can then be turned on/off by toggling the 'debugEnabled'
 option under the 'Debug' folder.</p>
-<p>If you want to modify the rectangles that are drawn or you are not using the<br />
+<p>If you want to modify the rectangles that are drawn or you are not using the
 playground, you can follow the example below.</p>
 <pre><code class="js language-js">import {createNewRenderer, DebugDrawer} from '@blockly/dev-tools';
 
@@ -143,7 +145,6 @@ logger.disableLogger(workspace);</code></pre>
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

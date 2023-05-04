@@ -10,7 +10,7 @@
     <title>@blockly/disable-top-blocks Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/disable-top-blocks" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,14 +46,13 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklydisable-top-blocks-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/disable-top-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
-<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that shows the<br />
-'disable' context menu option only on non-orphan blocks. This is useful in<br />
-conjunction with the <code>Blockly.Events.disableOrphans</code> event handler (which you<br />
+      <h1 id="blocklydisable-top-blocks-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/disable-top-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that shows the
+'disable' context menu option only on non-orphan blocks. This is useful in
+conjunction with the <code>Blockly.Events.disableOrphans</code> event handler (which you
 must set up yourself).</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
@@ -73,17 +75,16 @@ const disableTopBlocksPlugin = new DisableTopBlocks();
 disableTopBlocksPlugin.init();</code></pre>
 <h2 id="api">API</h2>
 <ul>
-<li><code>init</code> initializes the plugin and modifies the behavior of the 'disable'<br />
+<li><code>init</code> initializes the plugin and modifies the behavior of the 'disable'
 context menu item.</li>
-<li><code>dispose</code> restores the original behavior of the context menu. This is never<br />
-required to be called, but can be if you want to programmatically disable<br />
+<li><code>dispose</code> restores the original behavior of the context menu. This is never
+required to be called, but can be if you want to programmatically disable
 the effects of the plugin.</li>
 </ul>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

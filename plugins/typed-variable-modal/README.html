@@ -10,7 +10,7 @@
     <title>@blockly/plugin-typed-variable-modal Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/plugin-typed-variable-modal" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,19 +46,18 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklyplugin-typed-variable-modal-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/plugin-typed-variable-modal <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
-<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that adds the ability<br />
+      <h1 id="blocklyplugin-typed-variable-modal-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/plugin-typed-variable-modal <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that adds the ability
 to create a modal for creating typed variables.</p>
 <h2 id="installation">Installation</h2>
 <pre><code>npm install @blockly/plugin-typed-variable-modal --save</code></pre>
 <h2 id="usage">Usage</h2>
-<p>To add a Typed Variable Modal to your application you will have to create a<br />
-custom dynamically populated flyout category. More information on custom flyouts<br />
-can be<br />
+<p>To add a Typed Variable Modal to your application you will have to create a
+custom dynamically populated flyout category. More information on custom flyouts
+can be
 found <a href="https://developers.google.com/blockly/guides/configure/web/toolbox?hl=en#dynamic_categories">here</a>.</p>
 <h4 id="import">Import</h4>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
@@ -87,13 +89,13 @@ import { TypedVariableModal } from '@blockly/plugin-typed-variable-modal';</code
 };</code></pre>
 <p>Register the callback for the toolbox category.</p>
 <pre><code class="js language-js">workspace.registerToolboxCategoryCallback('CREATE_TYPED_VARIABLE', createFlyout);</code></pre>
-<p>Create your Typed Variable Modal using the workspace, callbackName for the<br />
+<p>Create your Typed Variable Modal using the workspace, callbackName for the
 button and your types.</p>
 <pre><code class="js language-js">const typedVarModal = new TypedVariableModal(workspace, 'callbackName', [["PENGUIN", "Penguin"], ["GIRAFFE", "Giraffe"]]);
 typedVarModal.init();</code></pre>
 <h4 id="blockly-languages">Blockly Languages</h4>
-<p>We do not currently support translating the text in this plugin to different<br />
-languages. However, if you would like to support multiple languages the<br />
+<p>We do not currently support translating the text in this plugin to different
+languages. However, if you would like to support multiple languages the
 different messages in the typed variable modal can be set by calling <code>typedVarModal.setLocale(messages)</code>.</p>
 <p>Messages that need to be translated for a Typed Variable Modal:</p>
 <ul>
@@ -102,9 +104,9 @@ different messages in the typed variable modal can be set by calling <code>typed
 <li><code>TYPED_VAR_MODAL_TYPES_LABEL</code> (Default: "Variable Types"): The label in front of the types.</li>
 <li><code>TYPED_VAR_MODAL_CANCEL_BUTTON</code> (Default: "Cancel"): The label for the cancel button.</li>
 <li><code>TYPED_VAR_MODAL_TITLE</code> (Default: "Create Typed Variable"): The modal title.</li>
-<li><code>TYPED_VAR_MODAL_INVALID_NAME</code><br />
-(Default: "Name is not valid. Please choose a different name.") The message used<br />
-when a user gives an invalid variable name. Name is invalid if it is the message<br />
+<li><code>TYPED_VAR_MODAL_INVALID_NAME</code>
+(Default: "Name is not valid. Please choose a different name.") The message used
+when a user gives an invalid variable name. Name is invalid if it is the message
 used for renaming a variable, creating a variable, or an empty string.</li>
 </ul>
 <h2 id="api">API</h2>
@@ -120,7 +122,6 @@ used for renaming a variable, creating a variable, or an empty string.</li>
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

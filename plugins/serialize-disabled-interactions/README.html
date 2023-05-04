@@ -10,7 +10,7 @@
     <title>@blockly/plugin-serialize-disabled-interactions Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/plugin-serialize-disabled-interactions" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,38 +46,36 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklyplugin-serialize-disabled-interactions-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/plugin-serialize-disabled-interactions <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
-<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin for the JSON<br />
-serialization system that serializes blocks which are not deletable,<br />
+      <h1 id="blocklyplugin-serialize-disabled-interactions-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/plugin-serialize-disabled-interactions <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin for the JSON
+serialization system that serializes blocks which are not deletable,
 movable, or editable.</p>
 <h2 id="when-to-use">When to use</h2>
 <h3 id="for-blockly-versions--v930">For Blockly versions &gt;= v9.3.0</h3>
-<p>This plugin is being deprecated, because serializing these disabled-interaction<br />
+<p>This plugin is being deprecated, because serializing these disabled-interaction
 attributes is now handled by core in versions of Blockly &gt;= v9.3.0.</p>
-<p>If you had previously used this plugin to serialize workspaces, you should use<br />
-v3.0 of the plugin. This version will deserialize the old saves, but it will no<br />
-longer serialize the disabled properties (since that is now handled by core).<br />
-Once all  of your saves have been "cleaned" you can safely remove your use of<br />
+<p>If you had previously used this plugin to serialize workspaces, you should use
+v3.0 of the plugin. This version will deserialize the old saves, but it will no
+longer serialize the disabled properties (since that is now handled by core).
+Once all  of your saves have been "cleaned" you can safely remove your use of
 this plugin.</p>
 <h3 id="for-blockly-versions--v930-1">For Blockly versions &lt; v9.3.0</h3>
-<p>This plugin was created because the old XML serialization system supported<br />
-serializing these disabled-interaction attributes, but the new JSON system did<br />
-not (for versions of Blockly &lt; v9.3.0). For more information about why this<br />
+<p>This plugin was created because the old XML serialization system supported
+serializing these disabled-interaction attributes, but the new JSON system did
+not (for versions of Blockly &lt; v9.3.0). For more information about why this
 was, see <a href="https://groups.google.com/g/blockly/c/eP9PXVfCaHs/m/S4rPmwnTAQAJ">this forum post</a>.</p>
 <p>In v9.3.0 this was changed to fix <a href="https://github.com/google/blockly/issues/6793">https://github.com/google/blockly/issues/6793</a>.</p>
-<p>It is <strong>strongly</strong> recommended that instead of using this plugin, you upgrade<br />
-to a version of Blockly &gt;= v9.3.0. However if that is not possible, you can use<br />
+<p>It is <strong>strongly</strong> recommended that instead of using this plugin, you upgrade
+to a version of Blockly &gt;= v9.3.0. However if that is not possible, you can use
 v2.0 of this plugin (as v3.0 does not actually serialize these attributes).</p>
-<p>Note that this plugin is being removed in the future, so by newly installing it<br />
-now, you will be introducing a dependency you will be forced to remove in the<br />
+<p>Note that this plugin is being removed in the future, so by newly installing it
+now, you will be introducing a dependency you will be forced to remove in the
 future if they you to remain up-to-date with core Blockly.</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

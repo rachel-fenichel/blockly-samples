@@ -10,7 +10,7 @@
     <title>@blockly/block-plus-minus Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/block-plus-minus" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,17 +46,16 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklyblock-plus-minus-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/block-plus-minus <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
-<p>A group of <a href="https://www.npmjs.com/package/blockly">Blockly</a> blocks that replace the built-in mutator UI with a +/-<br />
+      <h1 id="blocklyblock-plus-minus-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/block-plus-minus <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+<p>A group of <a href="https://www.npmjs.com/package/blockly">Blockly</a> blocks that replace the built-in mutator UI with a +/-
 based UI.</p>
-<p>Currently this only affects the built-in blocks that use mutators (controls_if, text_join, list_create_with,<br />
+<p>Currently this only affects the built-in blocks that use mutators (controls_if, text_join, list_create_with,
 procedures_defnoreturn, and procedures_defreturn).</p>
 <p><img src="https://github.com/google/blockly-samples/raw/master/plugins/block-plus-minus/readme-media/If.png" alt="" /></p>
-<p>But the ability to easily add this to your own mutators may be added<br />
+<p>But the ability to easily add this to your own mutators may be added
 in the future.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
@@ -65,17 +67,17 @@ in the future.</p>
 <pre><code class="js language-js">import Blockly from 'blockly';
 import '@blockly/block-plus-minus';</code></pre>
 <h3 id="blockly-languages">Blockly Languages</h3>
-<p>We do not currently support translating the text in this plugin to different<br />
-languages. However, if you would like to support multiple languages the messages<br />
+<p>We do not currently support translating the text in this plugin to different
+languages. However, if you would like to support multiple languages the messages
 can be translated by assigning the following properties of Blockly.Msg</p>
 <ul>
-<li><code>PROCEDURE_VARIABLE</code> (Default: "variable:"): The label which signals the text<br />
+<li><code>PROCEDURE_VARIABLE</code> (Default: "variable:"): The label which signals the text
 input is a variable.</li>
 </ul>
 <pre><code class="javascript language-javascript">Blockly.Msg['PROCEDURE_VARIABLE'] = 'variabele:';  // Dutch
 // Inject workspace, etc...</code></pre>
 <h3 id="xml">XML</h3>
-<p>Blocks will automatically use the +/- UI when loaded from XML. But here is some example XML incase you are trying to<br />
+<p>Blocks will automatically use the +/- UI when loaded from XML. But here is some example XML incase you are trying to
 add specific mutations of blocks:</p>
 <h4 id="if">If</h4>
 <pre><code class="xml language-xml">&lt;block type="controls_if"&gt;&lt;/block&gt;</code></pre>
@@ -106,7 +108,6 @@ add specific mutations of blocks:</p>
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

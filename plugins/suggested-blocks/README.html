@@ -10,7 +10,7 @@
     <title>@blockly/suggested-blocks Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/suggested-blocks" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,11 +46,10 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklysuggested-blocks-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/suggested-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+      <h1 id="blocklysuggested-blocks-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/suggested-blocks <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that suggests blocks for the user based on which blocks they've used already in the workspace.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
@@ -81,24 +83,23 @@ SuggestedBlocks.init(workspace);</code></pre>
 <h2 id="api">API</h2>
 <ul>
 <li><code>init</code>: Initializes the suggested blocks categories in the toolbox. Takes several arguments:<ul>
-<li><code>workspace</code>: The workspace to use the plugin with. If you have multiple<br />
-workspaces, you need to register the plugin for each workspace separately,<br />
+<li><code>workspace</code>: The workspace to use the plugin with. If you have multiple
+workspaces, you need to register the plugin for each workspace separately,
 and the stats will be tracked separately.</li>
-<li><code>numBlocksPerCategory</code> (optional): The maximum number of blocks to show in<br />
+<li><code>numBlocksPerCategory</code> (optional): The maximum number of blocks to show in
 each category. Defaults to 10.</li>
-<li><code>waitForFinishedLoading</code> (optional): Whether to wait for the<br />
-<a href="https://developers.google.com/blockly/reference/js/blockly.events_namespace.finishedloading_class.md"><code>Blockly.Events.FinishedLoading</code> event</a><br />
-before taking action on any new <code>BlockCreate</code> events. If you disable event<br />
-firing while you load the initial state of the workspace, you'll need to set<br />
-this to <code>false</code>, or the plugin will never place blocks in either category.<br />
-By default, this value is <code>true</code>, so that events fired while loading initial<br />
+<li><code>waitForFinishedLoading</code> (optional): Whether to wait for the
+<a href="https://developers.google.com/blockly/reference/js/blockly.events_namespace.finishedloading_class.md"><code>Blockly.Events.FinishedLoading</code> event</a>
+before taking action on any new <code>BlockCreate</code> events. If you disable event
+firing while you load the initial state of the workspace, you'll need to set
+this to <code>false</code>, or the plugin will never place blocks in either category.
+By default, this value is <code>true</code>, so that events fired while loading initial
 serialized state do not affect the statistics.</li></ul></li>
 </ul>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

@@ -10,7 +10,7 @@
     <title>@blockly/shadow-block-converter Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/shadow-block-converter" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,11 +46,10 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklyshadow-block-converter-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/shadow-block-converter <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+      <h1 id="blocklyshadow-block-converter-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/shadow-block-converter <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin for automatically converting shadow blocks to real blocks when the user edits them.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
@@ -55,9 +57,9 @@
 <h3 id="npm">npm</h3>
 <pre><code>npm install @blockly/shadow-block-converter --save</code></pre>
 <h2 id="usage">Usage</h2>
-<p>This plugin exports a function called <code>shadowBlockConversionChangeListener</code>. If<br />
-you add it as a change listener to your blockly workspace then any shadow block<br />
-the user edits will be converted to a real block. See below for an example using<br />
+<p>This plugin exports a function called <code>shadowBlockConversionChangeListener</code>. If
+you add it as a change listener to your blockly workspace then any shadow block
+the user edits will be converted to a real block. See below for an example using
 it with a workspace.</p>
 <h3 id="javascript">JavaScript</h3>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
@@ -71,7 +73,6 @@ function start() {
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">

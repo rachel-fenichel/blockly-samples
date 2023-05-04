@@ -10,7 +10,7 @@
     <title>@blockly/workspace-backpack Demo</title>
   </head>
   <body class="root" class="root">
-    <main id="main" class="has-tabs">
+    
   <!-- NAV BAR -->
   <nav id="toolbar">
     <a href="/blockly-samples/" id="arrow-back">
@@ -29,6 +29,9 @@
     <a href="https://www.npmjs.com/package/@blockly/workspace-backpack" class="button" target="_blank">View on npm</a>
   </nav>
   <!-- END NAV BAR -->
+    <main id="main" class="has-tabs">
+      <div class="drop-shadow"></div>
+      
   <!-- PAGE TABS -->
   <ul id="tabs">
     <li>
@@ -43,11 +46,10 @@
     </li>
   </ul>
   <!-- END PAGE TABS -->
-
-    <main id="main" class="has-tabs">
+      
     <article class="article-container site-width">
       <div class="article">
-      <h1 id="blocklyworkspace-backpack-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly"><a href="https://github.com/blockly">@blockly</a>/workspace-backpack <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
+      <h1 id="blocklyworkspace-backpack-built-on-blocklyhttpstinyurlcombuilt-on-blocklyhttpsgithubcomgoogleblockly">@blockly/workspace-backpack <a href="https://github.com/google/blockly"><img src="https://tinyurl.com/built-on-blockly" alt="Built on Blockly" /></a></h1>
 <p>A <a href="https://www.npmjs.com/package/blockly">Blockly</a> plugin that adds a Backpack to the workspace.</p>
 <h2 id="installation">Installation</h2>
 <h3 id="yarn">Yarn</h3>
@@ -64,7 +66,7 @@
 <li>"Copy to Backpack" on a Block stack in main Workspace</li>
 <li>"Empty" option when right clicking the Backpack that is disabled if the Backpack is empty</li>
 </ul>
-<p>![An animated picture of all the context menu options in use](<br />
+<p>![An animated picture of all the context menu options in use](
 <a href="https://github.com/google/blockly-samples/raw/master/plugins/workspace-backpack/readme-media/context-menu.gif">https://github.com/google/blockly-samples/raw/master/plugins/workspace-backpack/readme-media/context-menu.gif</a>)</p>
 <h2 id="usage">Usage</h2>
 <pre><code class="js language-js">import * as Blockly from 'blockly';
@@ -92,8 +94,8 @@ backpack.init();</code></pre>
     disablePreconditionChecks: (boolean|undefined),
   },
 }</code></pre>
-<p>The configuration options are passed in to the constructor. In this<br />
-configuration object, you can currently configure which context menu options are<br />
+<p>The configuration options are passed in to the constructor. In this
+configuration object, you can currently configure which context menu options are
 registered at <code>init</code>.</p>
 <pre><code class="js language-js">const backpackOptions = {
   allowEmptyBackpackOpen: true,
@@ -105,7 +107,7 @@ registered at <code>init</code>.</p>
   },
 };
 const backpack = new Backpack(workspace,  backpackOptions);</code></pre>
-<p>The following options are the default values used for any property in the<br />
+<p>The following options are the default values used for any property in the
 passed in options that is undefined:</p>
 <pre><code class="js language-js">const defaultOptions = {
   allowEmptyBackpackOpen: true,
@@ -119,31 +121,31 @@ passed in options that is undefined:</p>
     disablePreconditionChecks: false,
   },
 };</code></pre>
-<p>The <code>allowEmptyBackpackOpen</code> property, if set to <code>false</code>, will prevent the backpack flyout from<br />
+<p>The <code>allowEmptyBackpackOpen</code> property, if set to <code>false</code>, will prevent the backpack flyout from
 being opened if the backpack is empty.</p>
-<p>The <code>useFilledBackpackImage</code> property, if set to <code>true</code>, will change the<br />
+<p>The <code>useFilledBackpackImage</code> property, if set to <code>true</code>, will change the
 backpack image when the backpack has something in it.</p>
-<p>The <code>disablePreconditionChecks</code> property will prevent the "Copy to Backpack"<br />
-context menu option from disabling the context menu option if the block is<br />
-already in the Backpack. Setting this flag to <code>true</code> to disable the check can be<br />
+<p>The <code>disablePreconditionChecks</code> property will prevent the "Copy to Backpack"
+context menu option from disabling the context menu option if the block is
+already in the Backpack. Setting this flag to <code>true</code> to disable the check can be
 beneficial for performance if you expect blocks stacks to be very large.</p>
-<p>![An animated picture of the "Copy to Backpack" context menu](<br />
+<p>![An animated picture of the "Copy to Backpack" context menu](
 <a href="https://github.com/google/blockly-samples/raw/master/plugins/workspace-backpack/readme-media/context-menu-precondition.gif">https://github.com/google/blockly-samples/raw/master/plugins/workspace-backpack/readme-media/context-menu-precondition.gif</a>)</p>
-<p>Note: Currently the empty Backpack context menu is registered globally, while<br />
+<p>Note: Currently the empty Backpack context menu is registered globally, while
 the others are registered per workspace.</p>
 <h3 id="blockly-languages">Blockly Languages</h3>
-<p>We do not currently support translating the text in this plugin to different<br />
-languages. However, if you would like to support multiple languages the messages<br />
+<p>We do not currently support translating the text in this plugin to different
+languages. However, if you would like to support multiple languages the messages
 can be translated by assigning the following properties of Blockly.Msg</p>
 <ul>
 <li><code>EMPTY_BACKPACK</code> (Default: "Empty") context menu - Empty the backpack.</li>
-<li><code>REMOVE_FROM_BACKPACK</code> (Default: "Remove from Backpack") context menu - Remove<br />
+<li><code>REMOVE_FROM_BACKPACK</code> (Default: "Remove from Backpack") context menu - Remove
 the selected Block from the backpack.</li>
-<li><code>COPY_TO_BACKPACK</code> (Default: "Copy to Backpack") context menu - Copy the<br />
+<li><code>COPY_TO_BACKPACK</code> (Default: "Copy to Backpack") context menu - Copy the
 selected Block to the backpack.</li>
-<li><code>COPY_ALL_TO_BACKPACK</code> (Default: "Copy All Blocks to Backpack") Context menu -<br />
+<li><code>COPY_ALL_TO_BACKPACK</code> (Default: "Copy All Blocks to Backpack") Context menu -
 copy all Blocks on the workspace to the backpack.</li>
-<li><code>PASTE_ALL_FROM_BACKPACK</code> (Default: "Paste All Blocks from Backpack") context<br />
+<li><code>PASTE_ALL_FROM_BACKPACK</code> (Default: "Paste All Blocks from Backpack") context
 menu - Paste all Blocks from the backpack to the workspace.</li>
 </ul>
 <pre><code class="javascript language-javascript">Blockly.Msg['EMPTY_BACKPACK'] = 'Opróżnij plecak';  // Polish
@@ -154,7 +156,7 @@ menu - Paste all Blocks from the backpack to the workspace.</li>
 <li><p><code>dispose</code>: Disposes of backpack.</p></li>
 <li><p><code>getCount</code>: Returns the count of items in the backpack.</p></li>
 <li><p><code>getContents</code> Returns backpack contents.</p></li>
-<li><p><code>empty</code>: Empties the backpack's contents. If the contents-flyout is currently<br />
+<li><p><code>empty</code>: Empties the backpack's contents. If the contents-flyout is currently
 open it will be closed.</p></li>
 <li><p><code>addBlock</code>: Adds Block to backpack.</p></li>
 <li><p><code>addBlocks</code>: Adds Blocks to backpack.</p></li>
@@ -168,7 +170,7 @@ open it will be closed.</p></li>
 <li><p><code>handleBlockDrop</code>: Handles a block drop on this backpack.</p></li>
 <li><p><code>onDragEnter</code>: Handle mouse over.</p></li>
 <li><p><code>onDragExit</code>: Handle mouse exit.</p></li>
-<li><p><code>getBoundingRectangle</code>: Returns the bounding rectangle of the UI element in<br />
+<li><p><code>getBoundingRectangle</code>: Returns the bounding rectangle of the UI element in
 pixel units relative to the Blockly injection div.</p></li>
 <li><p><code>position</code>: Positions the backpack UI element.</p></li>
 </ul>
@@ -176,11 +178,11 @@ pixel units relative to the Blockly injection div.</p></li>
 <h3 id="multiple-backpacks-per-workspace">Multiple Backpacks per Workspace</h3>
 <p>This plugin also currently only supports one Backpack per Workspace.</p>
 <h3 id="blocklyconfigurecontextmenu">Blockly.configureContextMenu</h3>
-<p>This plugin registers a custom context menu by overriding<br />
-<code>Blockly.configureContextMenu</code> in <code>init</code> in order to support the context menu<br />
-for emptying the Backpack.<br />
-If you also override <code>Blockly.configureContextMenu</code> after initializing this<br />
-plugin, you must also call the old <code>Blockly.configureContextMenu</code> function.<br />
+<p>This plugin registers a custom context menu by overriding
+<code>Blockly.configureContextMenu</code> in <code>init</code> in order to support the context menu
+for emptying the Backpack.
+If you also override <code>Blockly.configureContextMenu</code> after initializing this
+plugin, you must also call the old <code>Blockly.configureContextMenu</code> function.
 Example:</p>
 <pre><code>const prevConfigureContextMenu = workspace.configureContextMenu;
 workspace.configureContextMenu = (menuOptions, e) =&gt; {
@@ -189,16 +191,15 @@ workspace.configureContextMenu = (menuOptions, e) =&gt; {
   ...
 }</code></pre>
 <h3 id="backpack-flyout">Backpack Flyout</h3>
-<p>The Backpack Flyout uses the registered Flyout for either<br />
-<code>Blockly.registry.Type.FLYOUTS_HORIZONTAL_TOOLBOX</code> or<br />
-<code>Blockly.registry.Type.FLYOUTS_VERTICAL_TOOLBOX</code>, similar to the implementation<br />
-for <code>Blockly.Trashcan</code>. If a custom class is registered for either of these<br />
+<p>The Backpack Flyout uses the registered Flyout for either
+<code>Blockly.registry.Type.FLYOUTS_HORIZONTAL_TOOLBOX</code> or
+<code>Blockly.registry.Type.FLYOUTS_VERTICAL_TOOLBOX</code>, similar to the implementation
+for <code>Blockly.Trashcan</code>. If a custom class is registered for either of these
 types, then the Backpack Flyout may need to be tested for compatibility.</p>
 <h2 id="license">License</h2>
 <p>Apache 2.0</p>
       </div>
     </article>
-    </main>
   </main>
   <!-- FOOTER  -->
   <footer id="footer">
